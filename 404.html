@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Plainview Baptist Church</title>
+    <script>
+      // GitHub Pages user site at the domain root.
+      // A missing path such as /join/<token> is rewritten to /?/<path>
+      // so index.html can restore it. Query encoding matches spa-github-pages.
+      (function () {
+        var l = window.location;
+        var rest = l.pathname.slice(1).replace(/&/g, "~and~");
+        var search = l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "";
+        l.replace(
+          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+          "/?/" + rest + search + l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Opening Plainview Baptist Church…</p>
+  </body>
+</html>
