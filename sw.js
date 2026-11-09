@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location).pathname;
-const BUILD = "mw8m93qn";
-const PRECACHE = ["/assets/atkinson-hyperlegible-latin-400-normal-BbWidj28.woff","/assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2","/assets/atkinson-hyperlegible-latin-700-normal-BK6Glc0m.woff","/assets/atkinson-hyperlegible-latin-700-normal-GZI4o3u0.woff2","/assets/atkinson-hyperlegible-latin-ext-400-normal-Bbz-b3yf.woff","/assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-BoVPHkS0.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-CKkU2Dpt.woff","/assets/fraunces-latin-600-normal-BFCDtZfi.woff2","/assets/fraunces-latin-600-normal-DL5QCzvS.woff","/assets/fraunces-latin-700-normal-CEOla-zY.woff2","/assets/fraunces-latin-700-normal-DTjk5d1Q.woff","/assets/fraunces-latin-800-normal-5RM8DebB.woff2","/assets/fraunces-latin-800-normal-B3oGScaA.woff","/assets/fraunces-latin-ext-600-normal-B0Dy4lqi.woff","/assets/fraunces-latin-ext-600-normal-BtzmzP0X.woff2","/assets/fraunces-latin-ext-700-normal-CanUGppC.woff2","/assets/fraunces-latin-ext-700-normal-DuBstVeD.woff","/assets/fraunces-latin-ext-800-normal-DYQACqvw.woff2","/assets/fraunces-latin-ext-800-normal-pDzgxm9I.woff","/assets/fraunces-vietnamese-600-normal-BjlAJixd.woff2","/assets/fraunces-vietnamese-600-normal-DlAl5EAR.woff","/assets/fraunces-vietnamese-700-normal-DH94m5DZ.woff2","/assets/fraunces-vietnamese-700-normal-DxawQjq2.woff","/assets/fraunces-vietnamese-800-normal-B5-KC0PG.woff2","/assets/fraunces-vietnamese-800-normal-Ciifa4CI.woff","/assets/index-DXODyItS.css","/assets/index-QzoYBoWg.js","/assets/index.esm-O_ZgYZD2.js","/assets/pdf.worker.min-CIqJB0yW.mjs","/church-banner.jpg","/firebase-config.js","/flyers/school.svg","/flyers/sermon-notes.pdf","/flyers/sunday.svg","/flyers/supper.svg","/flyers/wednesday.svg","/flyers/youth-night.svg","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-192.png","/icons/icon-maskable-512.png","/index.html","/logo.png","/manifest.webmanifest","/sanctuary-banner-800.jpg","/sanctuary-banner.jpg","/videos/christmas.jpg","/videos/dedication.jpg","/videos/vbs.jpg","/videos/youth.jpg"];
+const BUILD = "mw8r3omm";
+const PRECACHE = ["/assets/atkinson-hyperlegible-latin-400-normal-BbWidj28.woff","/assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2","/assets/atkinson-hyperlegible-latin-700-normal-BK6Glc0m.woff","/assets/atkinson-hyperlegible-latin-700-normal-GZI4o3u0.woff2","/assets/atkinson-hyperlegible-latin-ext-400-normal-Bbz-b3yf.woff","/assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-BoVPHkS0.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-CKkU2Dpt.woff","/assets/fraunces-latin-600-normal-BFCDtZfi.woff2","/assets/fraunces-latin-600-normal-DL5QCzvS.woff","/assets/fraunces-latin-700-normal-CEOla-zY.woff2","/assets/fraunces-latin-700-normal-DTjk5d1Q.woff","/assets/fraunces-latin-800-normal-5RM8DebB.woff2","/assets/fraunces-latin-800-normal-B3oGScaA.woff","/assets/fraunces-latin-ext-600-normal-B0Dy4lqi.woff","/assets/fraunces-latin-ext-600-normal-BtzmzP0X.woff2","/assets/fraunces-latin-ext-700-normal-CanUGppC.woff2","/assets/fraunces-latin-ext-700-normal-DuBstVeD.woff","/assets/fraunces-latin-ext-800-normal-DYQACqvw.woff2","/assets/fraunces-latin-ext-800-normal-pDzgxm9I.woff","/assets/fraunces-vietnamese-600-normal-BjlAJixd.woff2","/assets/fraunces-vietnamese-600-normal-DlAl5EAR.woff","/assets/fraunces-vietnamese-700-normal-DH94m5DZ.woff2","/assets/fraunces-vietnamese-700-normal-DxawQjq2.woff","/assets/fraunces-vietnamese-800-normal-B5-KC0PG.woff2","/assets/fraunces-vietnamese-800-normal-Ciifa4CI.woff","/assets/index-B3VyUECi.js","/assets/index-CtI36TS8.css","/assets/index.esm-1o2ofDxu.js","/assets/pdf.worker.min-CIqJB0yW.mjs","/church-banner.jpg","/firebase-config.js","/flyers/school.svg","/flyers/sermon-notes.pdf","/flyers/sunday.svg","/flyers/supper.svg","/flyers/wednesday.svg","/flyers/youth-night.svg","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-192.png","/icons/icon-maskable-512.png","/index.html","/logo.png","/manifest.webmanifest","/sanctuary-banner-800.jpg","/sanctuary-banner.jpg","/videos/christmas.jpg","/videos/dedication.jpg","/videos/vbs.jpg","/videos/youth.jpg"];
 const SHELL = `plainview-shell-${BUILD}`;
 const IMAGES = `plainview-images-${BUILD}`;
 const IMAGE_CAP = 80;
@@ -133,18 +133,56 @@ self.addEventListener("fetch", (event) => {
   })());
 });
 
+self.addEventListener("push", (event) => {
+  let payload = {};
+  try {
+    payload = event.data ? event.data.json() : {};
+  } catch {
+    payload = {};
+  }
+  const data = payload.data || {};
+  const note = payload.notification || {};
+  const title = note.title || data.title || "Plainview Baptist Church";
+  const body = note.body || data.body || "";
+  const href = data.url || data.href || (payload.fcmOptions && payload.fcmOptions.link) || "/";
+  const target = new URL(appPath(href), self.location.origin).href;
+  event.waitUntil(self.registration.showNotification(title, {
+    body,
+    icon: new URL("icons/icon-192.png", self.location).href,
+    data: { href, url: target },
+  }));
+});
+
+function notificationHref(notification) {
+  const data = notification.data || {};
+  const nested = data.FCM_MSG && (data.FCM_MSG.data || {}) || {};
+  return data.url || data.href || nested.url || nested.href || data.link || "/";
+}
+
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
-  const href = appPath(event.notification.data?.href || BASE);
-  event.waitUntil(
-    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((clients) => {
-      for (const client of clients) {
-        if ("focus" in client) {
-          client.navigate(href);
-          return client.focus();
+  const target = new URL(appPath(notificationHref(event.notification)), self.location.origin);
+  if (target.origin !== self.location.origin) return;
+  const href = `${target.pathname}${target.search}${target.hash}`;
+  event.waitUntil((async () => {
+    const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+    const sameOrigin = windows.filter((client) => {
+      try { return new URL(client.url).origin === self.location.origin; } catch { return false; }
+    });
+    const current = sameOrigin.find((client) => client.url.startsWith(self.registration.scope)) || sameOrigin[0];
+    if (current) {
+      await current.focus();
+      if (typeof current.navigate === "function") {
+        try {
+          await current.navigate(target.href);
+          return;
+        } catch {
+          // The page will open the route itself.
         }
       }
-      return self.clients.openWindow(href);
-    }),
-  );
+      current.postMessage({ type: "plainview-open", href });
+      return;
+    }
+    await self.clients.openWindow(target.href);
+  })());
 });
