@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location).pathname;
-const BUILD = "mw9979dj";
-const PRECACHE = ["/assets/atkinson-hyperlegible-latin-400-normal-BbWidj28.woff","/assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2","/assets/atkinson-hyperlegible-latin-700-normal-BK6Glc0m.woff","/assets/atkinson-hyperlegible-latin-700-normal-GZI4o3u0.woff2","/assets/atkinson-hyperlegible-latin-ext-400-normal-Bbz-b3yf.woff","/assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-BoVPHkS0.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-CKkU2Dpt.woff","/assets/fraunces-latin-600-normal-BFCDtZfi.woff2","/assets/fraunces-latin-600-normal-DL5QCzvS.woff","/assets/fraunces-latin-700-normal-CEOla-zY.woff2","/assets/fraunces-latin-700-normal-DTjk5d1Q.woff","/assets/fraunces-latin-800-normal-5RM8DebB.woff2","/assets/fraunces-latin-800-normal-B3oGScaA.woff","/assets/fraunces-latin-ext-600-normal-B0Dy4lqi.woff","/assets/fraunces-latin-ext-600-normal-BtzmzP0X.woff2","/assets/fraunces-latin-ext-700-normal-CanUGppC.woff2","/assets/fraunces-latin-ext-700-normal-DuBstVeD.woff","/assets/fraunces-latin-ext-800-normal-DYQACqvw.woff2","/assets/fraunces-latin-ext-800-normal-pDzgxm9I.woff","/assets/fraunces-vietnamese-600-normal-BjlAJixd.woff2","/assets/fraunces-vietnamese-600-normal-DlAl5EAR.woff","/assets/fraunces-vietnamese-700-normal-DH94m5DZ.woff2","/assets/fraunces-vietnamese-700-normal-DxawQjq2.woff","/assets/fraunces-vietnamese-800-normal-B5-KC0PG.woff2","/assets/fraunces-vietnamese-800-normal-Ciifa4CI.woff","/assets/index-BaunxN6s.css","/assets/index-DH_gma7Q.js","/assets/index.esm-CNXi2M-8.js","/assets/pdf.worker.min-CIqJB0yW.mjs","/church-banner.jpg","/firebase-config.js","/flyers/school.svg","/flyers/sermon-notes.pdf","/flyers/sunday.svg","/flyers/supper.svg","/flyers/wednesday.svg","/flyers/youth-night.svg","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-192.png","/icons/icon-maskable-512.png","/index.html","/logo.png","/manifest.webmanifest","/sanctuary-banner-800.jpg","/sanctuary-banner.jpg","/videos/christmas.jpg","/videos/dedication.jpg","/videos/vbs.jpg","/videos/youth.jpg"];
+const BUILD = "mw9aqojp";
+const PRECACHE = ["/assets/atkinson-hyperlegible-latin-400-normal-BbWidj28.woff","/assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2","/assets/atkinson-hyperlegible-latin-700-normal-BK6Glc0m.woff","/assets/atkinson-hyperlegible-latin-700-normal-GZI4o3u0.woff2","/assets/atkinson-hyperlegible-latin-ext-400-normal-Bbz-b3yf.woff","/assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-BoVPHkS0.woff2","/assets/atkinson-hyperlegible-latin-ext-700-normal-CKkU2Dpt.woff","/assets/fraunces-latin-600-normal-BFCDtZfi.woff2","/assets/fraunces-latin-600-normal-DL5QCzvS.woff","/assets/fraunces-latin-700-normal-CEOla-zY.woff2","/assets/fraunces-latin-700-normal-DTjk5d1Q.woff","/assets/fraunces-latin-800-normal-5RM8DebB.woff2","/assets/fraunces-latin-800-normal-B3oGScaA.woff","/assets/fraunces-latin-ext-600-normal-B0Dy4lqi.woff","/assets/fraunces-latin-ext-600-normal-BtzmzP0X.woff2","/assets/fraunces-latin-ext-700-normal-CanUGppC.woff2","/assets/fraunces-latin-ext-700-normal-DuBstVeD.woff","/assets/fraunces-latin-ext-800-normal-DYQACqvw.woff2","/assets/fraunces-latin-ext-800-normal-pDzgxm9I.woff","/assets/fraunces-vietnamese-600-normal-BjlAJixd.woff2","/assets/fraunces-vietnamese-600-normal-DlAl5EAR.woff","/assets/fraunces-vietnamese-700-normal-DH94m5DZ.woff2","/assets/fraunces-vietnamese-700-normal-DxawQjq2.woff","/assets/fraunces-vietnamese-800-normal-B5-KC0PG.woff2","/assets/fraunces-vietnamese-800-normal-Ciifa4CI.woff","/assets/index-BaunxN6s.css","/assets/index-Dt4qMT1A.js","/assets/index.esm-Sw_sU8m2.js","/assets/pdf.worker.min-CIqJB0yW.mjs","/church-banner.jpg","/firebase-config.js","/flyers/school.svg","/flyers/sermon-notes.pdf","/flyers/sunday.svg","/flyers/supper.svg","/flyers/wednesday.svg","/flyers/youth-night.svg","/icons/apple-touch-icon.png","/icons/favicon-32.png","/icons/icon-192.png","/icons/icon-512.png","/icons/icon-maskable-192.png","/icons/icon-maskable-512.png","/index.html","/logo.png","/manifest.webmanifest","/sanctuary-banner-800.jpg","/sanctuary-banner.jpg","/videos/christmas.jpg","/videos/dedication.jpg","/videos/vbs.jpg","/videos/youth.jpg"];
 const SHELL = `plainview-shell-${BUILD}`;
 const IMAGES = `plainview-images-${BUILD}`;
 const IMAGE_CAP = 80;
@@ -134,23 +134,47 @@ self.addEventListener("fetch", (event) => {
 });
 
 self.addEventListener("push", (event) => {
-  let payload = {};
-  try {
-    payload = event.data ? event.data.json() : {};
-  } catch {
-    payload = {};
-  }
-  const data = payload.data || {};
-  const note = payload.notification || {};
-  const title = note.title || data.title || "Plainview Baptist Church";
-  const body = note.body || data.body || "";
-  const href = data.url || data.href || (payload.fcmOptions && payload.fcmOptions.link) || "/";
-  const target = new URL(appPath(href), self.location.origin).href;
-  event.waitUntil(self.registration.showNotification(title, {
-    body,
-    icon: new URL("icons/icon-192.png", self.location).href,
-    data: { href, url: target },
-  }));
+  event.waitUntil((async () => {
+    const fallback = {
+      title: "Plainview Baptist Church",
+      body: "Open the app for church news.",
+      href: "/",
+    };
+    let title = fallback.title;
+    let body = fallback.body;
+    let href = fallback.href;
+    try {
+      let payload = {};
+      if (event.data) {
+        try {
+          payload = event.data.json();
+        } catch {
+          const text = event.data.text();
+          payload = text ? { body: text } : {};
+        }
+      }
+      const data = payload.data || {};
+      const note = payload.notification || {};
+      title = note.title || data.title || payload.title || fallback.title;
+      body = note.body || data.body || payload.body || fallback.body;
+      href = data.url || data.href || payload.url || payload.href || (payload.fcmOptions && payload.fcmOptions.link) || fallback.href;
+    } catch {
+      title = fallback.title;
+      body = fallback.body;
+      href = fallback.href;
+    }
+    const target = new URL(appPath(href || "/"), self.location.origin).href;
+    const options = {
+      body: body || fallback.body,
+      icon: new URL("icons/icon-192.png", self.location).href,
+      data: { href: href || "/", url: target },
+    };
+    try {
+      await self.registration.showNotification(title || fallback.title, options);
+    } catch {
+      await self.registration.showNotification(fallback.title, { body: fallback.body });
+    }
+  })());
 });
 
 function notificationHref(notification) {
