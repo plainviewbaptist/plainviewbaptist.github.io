@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Plainview Baptist Church</title>
+    <style>
+      html.display-boot, html.display-boot body { background: #000 !important; color: #000 !important; color-scheme: dark; }
+    </style>
     <script>
       // GitHub Pages user site at the domain root.
       // A missing path such as /join/<token> is rewritten to /?/<path>
       // so index.html can restore it. Query encoding matches spa-github-pages.
       (function () {
         var l = window.location;
-        var rest = l.pathname.slice(1).replace(/&/g, "~and~");
+        var path = l.pathname;
+        if (path === "/display" || path.indexOf("/display/") === 0) {
+          document.documentElement.classList.add("display-boot");
+          document.documentElement.style.background = "#000";
+          document.documentElement.style.colorScheme = "dark";
+        }
+        var rest = path.slice(1).replace(/&/g, "~and~");
         var search = l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "";
         l.replace(
           l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
