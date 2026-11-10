@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="PBC" />
     <title>Plainview Baptist Church</title>
-    <style>html.display-boot,html.display-boot body{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;background:#000!important}</style>
+    <style>@font-face{font-family:Fraunces;src:url(/fonts/fraunces-latin-700-normal.woff2)format("woff2");font-weight:700;font-style:normal;font-display:block}html,body{color:#241f1b;background:#f7f3ec;margin:0}html.display-boot,html.display-boot body{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;background:#000!important}html.display-boot .opening-screen{display:none!important}.opening-screen{z-index:80;box-sizing:border-box;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));color:#241f1b;text-align:center;background:#f7f3ec;flex-direction:column;justify-content:center;align-items:center;gap:clamp(20px,4vh,40px);margin:0;display:flex;position:fixed;inset:0}.opening-logo{object-fit:contain;background:0 0;width:min(62vw,70vmin);height:auto;max-height:42vh;display:block}.opening-title{text-wrap:balance;max-width:10em;margin:0;font-family:Fraunces,Georgia,serif;font-size:clamp(28px,7.5vw,56px);font-weight:700;line-height:1.15}</style>
     <script>
       // Paint projector loads black before the bundle or the page background.
       // Covers a direct /display path and the /?/display deep link from 404.html.
@@ -43,10 +43,15 @@
     <link rel="icon" href="/icons/favicon-32.png?v=2" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png?v=2" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <script type="module" crossorigin src="/assets/index-CKaoQlMY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CRkwhUmJ.css">
+    <script type="module" crossorigin src="/assets/index-DsbxuJVd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BqwEzO9h.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="opening-screen">
+        <img class="opening-logo" src="/logo.png" alt="" />
+        <p class="opening-title">Opening Plainview Baptist Church</p>
+      </div>
+    </div>
   </body>
 </html>

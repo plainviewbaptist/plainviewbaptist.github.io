@@ -4,7 +4,49 @@
     <meta charset="utf-8" />
     <title>Plainview Baptist Church</title>
     <style>
+      @font-face {
+        font-family: Fraunces;
+        src: url("/fonts/fraunces-latin-700-normal.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: block;
+      }
+      html, body { margin: 0; background: #f7f3ec; color: #241f1b; }
       html.display-boot, html.display-boot body { background: #000 !important; color: #000 !important; color-scheme: dark; }
+      html.display-boot .opening-screen { display: none !important; }
+      .opening-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(20px, 4vh, 40px);
+        margin: 0;
+        padding: calc(24px + env(safe-area-inset-top, 0px)) 24px calc(24px + env(safe-area-inset-bottom, 0px));
+        background: #f7f3ec;
+        color: #241f1b;
+        text-align: center;
+      }
+      .opening-logo {
+        display: block;
+        width: min(62vw, 70vmin);
+        height: auto;
+        max-height: 42vh;
+        object-fit: contain;
+        background: transparent;
+      }
+      .opening-title {
+        margin: 0;
+        max-width: 10em;
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(28px, 7.5vw, 56px);
+        font-weight: 700;
+        line-height: 1.15;
+        text-wrap: balance;
+      }
     </style>
     <script>
       // GitHub Pages user site at the domain root.
@@ -28,6 +70,9 @@
     </script>
   </head>
   <body>
-    <p>Opening Plainview Baptist Church…</p>
+    <div class="opening-screen">
+      <img class="opening-logo" src="/logo.png" alt="" />
+      <p class="opening-title">Opening Plainview Baptist Church</p>
+    </div>
   </body>
 </html>
