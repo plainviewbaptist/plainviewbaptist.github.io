@@ -1,9 +1,9 @@
 file	tab	section	description
 home.png	Home	Home	Welcome, the sanctuary, Pastor Jody Mitchell, and the service times for a signed-in member.
-events-list.png	Events	Events list	Open photo-upload cards sit at the top when a drop is open, then announcements, then the upcoming event list.
+events-list.png	Events	Events list	Add is the first button under the title and wraps with the other actions. Open photo-upload cards sit above announcements and the upcoming list.
 events-birthdays.png	Events	Birthdays & Anniversaries	November calendar of member birthdays and wedding anniversaries, with no years or ages.
 events-detail.png	Events	Event detail	Fellowship Supper. The photo card says pictures show in Watch > Media > Photos after uploads close, and it does not say they are private.
-events-new.png	Events	New event	The full new-event form, including the sign-up fields for a contact, a link, a deadline, and in-app sign-ups.
+events-new.png	Events	New event	Date and time stays the start. Ends is optional; this shot has Vacation Bible School running July 6 through July 10 at 6:00 PM.
 events-announcement.png	Events	Announcement	A posted announcement that also appears on the events screen.
 events-upload-checkbox.png	Events	Members can upload photos	The owner’s event form, with Members can upload photos checked so a photo drop is created for that event.
 events-upload.png	Events	Photo upload	The member photo upload screen. After uploads close, the pictures are shown in Watch, under Media, then Photos.
@@ -13,7 +13,7 @@ prayer-new.png	Prayer	New prayer request	The form for submitting a prayer reques
 prayer-daily.png	Prayer	Daily prayer	Today’s church prayer and the list of earlier ones.
 prayer-daily-detail.png	Prayer	Daily prayer detail	One daily prayer, with room to say Amen.
 watch-live.png	Watch	Live	Sunday Morning Worship is live, signed in as a member. The owner live controls and the demo live buttons are not on this screen. Media dates read like Sunday, June 14, 2026.
-watch-media-videos.png	Watch	Media videos	Videos already saved from past events, dated like Sunday, June 14, 2026, plus any owner montage.
+watch-media-videos.png	Watch	Media videos	Owner montages and saved videos use the same date, such as Sunday, June 14, 2026. The montage is sorted by its start.
 watch-media-photos.png	Watch	Media photos	Photos already saved from past events, with a friendly date. Add a photo is on this Photos side only, and only an approved member, admin, or owner can see and use it. People waiting for approval, declined accounts, and signed-out visitors do not.
 photo-viewer.png	Watch	Photo viewer	Full-screen viewer for the Fellowship album (Fellowship supper tables), 1 of 1, with Close, Previous, and Next. Vacation Bible School photos stay out of Media while that drop is still open.
 watch-sermons.png	Watch	Sermons	Sermons sit under Media. Watch is the live service, then Media, then Sermons.
