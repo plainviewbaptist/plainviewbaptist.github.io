@@ -1,0 +1,263 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Plainview Baptist Church App Guide</title><style>@font-face{font-family:"PF";src:url("file:///usr/share/fonts/truetype/sand-box/google/Playfair Display/PlayfairDisplay-VariableFont_wght.ttf");font-weight:400 900}
+@font-face{font-family:"MS";src:url("file:///usr/share/fonts/truetype/sand-box/google/Montserrat/Montserrat-VariableFont_wght.ttf");font-weight:100 900}
+@page{size:13.333in 7.5in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#fbf1dc;--cream2:#f6e3bd;--brown:#3b2a1a;--brown2:#5a4128;--gold:#c99a3c;--gold2:#e2bd6a;--dark:#262b28}
+body{font-family:"MS",sans-serif;color:var(--brown);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,.q{font-family:"PF",serif;font-weight:500}
+.kicker{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12pt}
+.slide{width:13.333in;height:7.5in;overflow:hidden;position:relative;page-break-after:always;display:flex;
+ background:linear-gradient(160deg,var(--cream2) 0%,var(--cream) 45%,#fdf6e8 100%)}
+.slide:last-child{page-break-after:auto}
+.sfoot{position:absolute;left:0;right:0;bottom:0;height:.4in;background:var(--dark);border-top:3px solid var(--gold);color:var(--gold2);
+ font-size:10pt;font-weight:600;display:flex;align-items:center;justify-content:center;gap:.5in}
+.sfoot b{color:#fff}.sfoot .pn{position:absolute;right:.4in;color:#fff}
+/* cover */
+.cover .cl{flex:1;padding:.45in .6in .4in .7in;display:flex;flex-direction:column;justify-content:center}
+.clogo{width:2.4in}
+.cover h1{font-size:44pt;margin:.04in 0 0}
+.csub{font-family:"PF";font-size:17pt;color:var(--brown2);font-style:italic}
+.inst{margin-top:.22in;border-top:2px solid var(--gold);padding-top:.12in}
+.inst .os{font-weight:800;color:#9a7426;font-size:12pt;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.06in}
+.inst p{font-size:14pt;line-height:1.45}.inst .small{font-size:12pt;color:var(--brown2);margin-top:.06in}
+.cover .cr{width:4.7in;background:var(--dark);border-left:5px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.cover .q{background:#fff;padding:.18in;border-radius:6px}
+.cover .q img{width:3in;height:3in;display:block;image-rendering:pixelated}
+.cover .url{color:#fff;font-weight:700;font-size:13pt;margin-top:.16in}
+.cover .sc{color:var(--gold2);font-weight:800;letter-spacing:.08em;font-size:11pt;margin-top:.05in}
+/* intro */
+.intro{background:var(--dark)}
+.intro .il{width:6.2in;padding:.8in .6in .8in .8in;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(160deg,var(--cream2),var(--cream))}
+.tabno{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#9a7426;font-size:12pt}
+.intro h1{font-size:64pt;line-height:1.05}
+.tag2{font-size:16pt;line-height:1.45;margin-top:.12in;color:var(--brown2)}
+.tabbar{display:flex;gap:.08in;margin-top:.4in}
+.tabbar span{font-size:11pt;font-weight:700;padding:.06in .14in;border-radius:20px;border:1.5px solid var(--gold);color:var(--brown2)}
+.tabbar span.on{background:var(--brown);color:var(--gold2);border-color:var(--brown)}
+.intro .ir{flex:1;padding:.6in .6in .7in;color:#f3ead8;display:flex;flex-direction:column;justify-content:center;border-left:5px solid var(--gold)}
+.seclist{list-style:none;margin-top:.15in}
+.seclist li{font-size:15pt;padding:.07in 0;border-bottom:1px solid #4a4a40;display:flex;align-items:center;gap:.16in}
+.seclist.two{columns:2;column-gap:.35in}
+.seclist.two li{font-size:12.5pt;padding:.055in 0;break-inside:avoid}
+.num{flex:none;width:.32in;height:.32in;border-radius:50%;background:var(--gold);color:var(--dark);font-weight:800;font-size:11pt;display:flex;align-items:center;justify-content:center}
+/* section */
+.sec .sl{flex:1;padding:.7in .5in .7in .85in;display:flex;flex-direction:column;justify-content:center}
+.crumb{font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#9a7426;font-size:12pt}
+.crumb span{color:var(--gold)}
+.sec h2{font-size:38pt;line-height:1.1;margin:.06in 0 .24in;border-bottom:2px solid var(--gold);padding-bottom:.12in}
+.pts{list-style:none}
+.pts li{font-size:17pt;line-height:1.45;margin-bottom:.16in;padding-left:.32in;position:relative}
+.pts li::before{content:"";position:absolute;left:0;top:.13in;width:.13in;height:.13in;border-radius:50%;background:var(--gold)}
+.tag{display:inline-block;background:var(--brown);color:var(--gold2);font-size:11pt;font-weight:800;letter-spacing:.05em;text-transform:uppercase;border-radius:4px;padding:.01in .08in;margin-right:.04in;vertical-align:2px}
+.sec .sr{width:4.6in;display:flex;align-items:center;justify-content:center;padding-bottom:.4in;background:linear-gradient(180deg,rgba(201,154,60,.12),rgba(201,154,60,.22))}
+.phone{background:#1d1d1d;padding:.09in;border-radius:.36in;box-shadow:0 6px 18px rgba(40,25,10,.35)}
+.phone img{display:block;height:6.15in;width:auto;border-radius:.28in}
+/* chart */
+.chart .chl{width:4.3in;padding:.6in .3in .6in .7in;display:flex;flex-direction:column;justify-content:center}
+.chart h2{font-size:34pt;margin:.06in 0 .2in}
+.chart .chl p{font-size:13.5pt;line-height:1.45;margin-bottom:.14in}
+.chart .chr{flex:1;padding:.35in .55in .6in .2in;display:flex;align-items:center}
+table{width:100%;border-collapse:collapse;font-size:11.5pt}
+th{background:var(--dark);color:var(--gold2);font-weight:800;padding:.06in .1in;text-align:center}
+th:first-child{text-align:left}
+td{padding:.035in .1in;border-bottom:1px solid #e3cf9f;text-align:center;background:#fffaf0}
+td:first-child{text-align:left}
+.y{color:#2e6b2e;font-weight:900;font-size:13pt}.n{color:#b8a888}
+tr.grp td{background:var(--brown2);color:var(--gold2);font-weight:800;font-size:10pt;letter-spacing:.05em;text-transform:uppercase;text-align:left}
+/* decide */
+.decide-s{padding:.35in .6in .65in}
+.decide{flex:1;border:3px solid var(--gold);border-radius:14px;background:#fffaf0;padding:.2in .4in .25in;box-shadow:0 2px 8px rgba(60,40,20,.15)}
+.decide h2{font-size:30pt;text-align:center;border-bottom:2px solid var(--gold);padding-bottom:.06in}
+.dcols{display:grid;grid-template-columns:1fr 1fr;gap:.45in;margin-top:.1in}
+.q{font-size:17pt;font-weight:600;margin:.1in 0 .1in;display:flex;align-items:center;gap:.12in}
+.q span{flex:none;width:.36in;height:.36in;border-radius:50%;background:var(--brown);color:var(--gold2);font-family:"MS";font-weight:800;font-size:13pt;display:flex;align-items:center;justify-content:center}
+.rec{background:#f6e9c8;border-left:6px solid var(--gold);border-radius:6px;padding:.1in .18in;min-height:1.75in}
+.rk{font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:10pt;color:#9a7426}
+.rec p{font-size:12.5pt;line-height:1.45;margin-top:.03in}
+.wl{display:flex;align-items:flex-end;gap:.15in;height:.52in}
+.wl span{font-weight:800;font-size:13pt;width:1in;padding-bottom:.03in}
+.wl i{flex:1;border-bottom:1.8px solid var(--brown);height:1px}
+.wl i.pre{height:auto;font-style:normal;font-family:"PF",serif;font-size:16pt;font-weight:600;padding:0 0 .03in .1in}
+</style></head><body><section class="slide cover">
+ <div class="cl">
+  <img class="clogo" src="../pbc-logo-cutout.png">
+  <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
+  <h1>Our Church App</h1>
+  <div class="csub">A guide to every screen &middot; Version 41</div>
+  <div class="inst">
+   <div class="os">Same app on iPhone and Android</div>
+   <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
+   <p><b>Android:</b> Open the link and tap <b>Install</b> or <b>Add to Home screen</b>.</p>
+   <p class="small">Services stream on Facebook Live.</p>
+  </div>
+ </div>
+ <div class="cr">
+  <div class="q"><img src="../pbc-app-qr.png"></div>
+  <div class="url">https://plainviewbaptist.github.io/</div>
+  <div class="sc">SCAN TO INSTALL</div>
+ </div>
+</section><section class="slide intro"><div class="il">
+ <div class="tabno">Tab 1 of 5</div><h1>Home</h1><p class="tag2">Your welcome page: our church, our pastor, and service times.</p>
+ <div class="tabbar"><span class="on">Home</span><span class="">Events</span><span class="">Prayer</span><span class="">Watch</span><span class="">More</span></div></div>
+ <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist "><li><span class="num">1</span>Home</li><li><span class="num">2</span>Service times</li></ol></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">2</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Home <span>&rsaquo;</span> 1 of 2</div>
+ <h2>Home</h2><ul class="pts"><li>The first screen you see. It welcomes you by name and shows the sanctuary and our pastor, Rev. Jody Mitchell.</li><li>Tap <b>Add to Home Screen</b> at the top to put the app on your phone.</li><li>The bell shows your notifications. Your initials at the top open your profile.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/home-top.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">3</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Home <span>&rsaquo;</span> 2 of 2</div>
+ <h2>Service times</h2><ul class="pts"><li>Scroll down on Home to see the service times.</li><li>Sunday School, Sunday Morning Worship, Sunday Evening Service, and Wednesday Evening Service are all listed.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/home-times.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">4</span></div></section><section class="slide intro"><div class="il">
+ <div class="tabno">Tab 2 of 5</div><h1>Events</h1><p class="tag2">What's coming up, birthdays and anniversaries, and event photos.</p>
+ <div class="tabbar"><span class="">Home</span><span class="on">Events</span><span class="">Prayer</span><span class="">Watch</span><span class="">More</span></div></div>
+ <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist two"><li><span class="num">1</span>Events list</li><li><span class="num">2</span>Birthdays &amp; Anniversaries</li><li><span class="num">3</span>Event detail</li><li><span class="num">4</span>New event</li><li><span class="num">5</span>New event: flyer and sign-up</li><li><span class="num">6</span>Announcement</li><li><span class="num">7</span>Members can upload photos</li><li><span class="num">8</span>Photo upload</li><li><span class="num">9</span>Owner montage: end-of-event video</li><li><span class="num">10</span>Owner montage in Media</li></ol></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">5</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 1 of 10</div>
+ <h2>Events list</h2><ul class="pts"><li>When a photo drop is open, its upload card sits at the top.</li><li>Next come announcements, then the list of upcoming events.</li><li>Tap <b>Add</b> to suggest an event. The button at the top switches to <b>Birthdays &amp; Anniversaries</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-list.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">6</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 2 of 10</div>
+ <h2>Birthdays &amp; Anniversaries</h2><ul class="pts"><li>A month calendar of members' birthdays and wedding anniversaries, with cake and ring markers.</li><li>No years or ages are shown, only the month and day.</li><li>Use the arrows to move between months. That month's names are listed below the calendar.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-birthdays.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">7</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 3 of 10</div>
+ <h2>Event detail</h2><ul class="pts"><li>Tap an event to see its flyer, time, place, and description.</li><li>If the event takes photos, its upload card is here too. After uploads close, the pictures are shown in <b>Watch &rsaquo; Media &rsaquo; Photos</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-detail.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">8</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 4 of 10</div>
+ <h2>New event</h2><ul class="pts"><li>Members can suggest an event: title, date and time, location, and description.</li><li>It stays off the calendar and the Sunday screen until an admin approves it.</li><li>You'll get a notice when it's approved or turned down.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/events-new-top.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">9</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 5 of 10</div>
+ <h2>New event: flyer and sign-up</h2><ul class="pts"><li>Tap <b>Upload flyer</b> to add a picture or PDF. No file? Tap <b>View preview</b> and the app designs a flyer for you to approve.</li><li><b>Sign-up</b> is optional: add a contact name, phone, and email, a sign-up link, and a sign-up deadline.</li><li>Or check <b>Collect sign-ups in the app</b> to get a headcount.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/events-new-signup.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">10</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 6 of 10</div>
+ <h2>Announcement</h2><ul class="pts"><li>A posted announcement, like the Fellowship supper, also appears on the Events screen.</li><li>Tap it to read the whole announcement. Tap <b>Back</b> to return.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-announcement.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">11</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 7 of 10</div>
+ <h2>Members can upload photos</h2><ul class="pts"><li><span class='tag'>Leaders</span> When setting up an event, check <b>Members can upload photos</b>.</li><li>That creates a photo drop for the event, so members can add their pictures.</li><li>Tap <b>Save event</b> when you're done.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-upload-checkbox.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">12</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 8 of 10</div>
+ <h2>Photo upload</h2><ul class="pts"><li>Share your photos from an event. <b>Photos only.</b></li><li>Tap <b>Choose photos</b> to pick pictures from your phone.</li><li>After uploads close, the pictures are shown to members in <b>Watch &rsaquo; Media &rsaquo; Photos</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/events-upload.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">13</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 9 of 10</div>
+ <h2>Owner montage: end-of-event video</h2><ul class="pts"><li><span class='tag'>Owners</span> On a past event's page, the <b>End-of-event video</b> box holds one video for that event.</li><li>Only a church owner can add or replace it, with <b>Replace video</b> or <b>Remove video</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/montage-top.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">14</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Events <span>&rsaquo;</span> 10 of 10</div>
+ <h2>Owner montage in Media</h2><ul class="pts"><li>The montage then shows in <b>Watch &rsaquo; Media &rsaquo; Videos</b> for everyone to watch.</li><li>Here it's listed as Vacation Bible School, with the event's date and time.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/montage-media.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">15</span></div></section><section class="slide intro"><div class="il">
+ <div class="tabno">Tab 3 of 5</div><h1>Prayer</h1><p class="tag2">Share requests and pray for one another.</p>
+ <div class="tabbar"><span class="">Home</span><span class="">Events</span><span class="on">Prayer</span><span class="">Watch</span><span class="">More</span></div></div>
+ <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist "><li><span class="num">1</span>Prayer list</li><li><span class="num">2</span>Prayer request</li><li><span class="num">3</span>New prayer request</li><li><span class="num">4</span>Daily prayer</li><li><span class="num">5</span>Daily prayer detail</li></ol></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">16</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Prayer <span>&rsaquo;</span> 1 of 5</div>
+ <h2>Prayer list</h2><ul class="pts"><li>Active prayer requests that members can read.</li><li>Tap <b>Praying</b> to show you're praying. The number shows how many are praying.</li><li>Switch between <b>Active</b> and <b>Past prayers</b>, open <b>Daily prayer</b>, or tap <b>New request</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/prayer-list.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">17</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Prayer <span>&rsaquo;</span> 2 of 5</div>
+ <h2>Prayer request</h2><ul class="pts"><li>Open a request from the list to read all of it.</li><li>Tap <b>Praying</b>, or write a note and tap <b>Send encouragement</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/prayer-detail.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">18</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Prayer <span>&rsaquo;</span> 3 of 5</div>
+ <h2>New prayer request</h2><ul class="pts"><li>Give your request a title, details, and a date.</li><li>Check <b>Private</b> so only you and the admins see it.</li><li>Or check <b>Hide my name</b>, and members see &ldquo;A church member.&rdquo;</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/prayer-new.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">19</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Prayer <span>&rsaquo;</span> 4 of 5</div>
+ <h2>Daily prayer</h2><ul class="pts"><li>Today's prayer posted for the church, with earlier ones listed.</li><li>Daily prayers stay off the prayer request list and the Sunday screen.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/prayer-daily.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">20</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Prayer <span>&rsaquo;</span> 5 of 5</div>
+ <h2>Daily prayer detail</h2><ul class="pts"><li>Open a daily prayer to read it in full.</li><li>Say <b>Amen</b> or tap a quick reaction.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/prayer-daily-detail.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">21</span></div></section><section class="slide intro"><div class="il">
+ <div class="tabno">Tab 4 of 5</div><h1>Watch</h1><p class="tag2">The live service, then Media (photos and videos from past events), then Sermons.</p>
+ <div class="tabbar"><span class="">Home</span><span class="">Events</span><span class="">Prayer</span><span class="on">Watch</span><span class="">More</span></div></div>
+ <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist "><li><span class="num">1</span>Live</li><li><span class="num">2</span>Media: Videos</li><li><span class="num">3</span>Media: Photos</li><li><span class="num">4</span>Photo viewer</li><li><span class="num">5</span>Sermons</li><li><span class="num">6</span>Sermon</li><li><span class="num">7</span>Add a photo</li><li><span class="num">8</span>Saved event videos</li></ol></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">22</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 1 of 8</div>
+ <h2>Live</h2><ul class="pts"><li>When a service is live, a red <b>Watching live now</b> banner runs across the top, and Watch shows <b>Live now</b> with the service name.</li><li>Services stream on Facebook Live. Tap <b>Open on Facebook</b> to watch there.</li><li>Right below is <b>Media</b>, with photos and videos from past events.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/watch-live-top.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">23</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 2 of 8</div>
+ <h2>Media: Videos</h2><ul class="pts"><li><b>Media</b> holds the photos and videos from past church events.</li><li><b>Videos</b> is shown first, including the owner's end-of-event video montages.</li><li>Newest first, with the date under each, like Sunday, June 14, 2026.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-media-videos.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">24</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 3 of 8</div>
+ <h2>Media: Photos</h2><ul class="pts"><li>Tap <b>Photos</b> to see pictures saved from past events, including members' uploads once a photo drop closes.</li><li>Newest first, with the date under each.</li><li><b>Add a photo</b> is for approved members, admins, and owners. People waiting for approval and visitors can't use it.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-media-photos.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">25</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 4 of 8</div>
+ <h2>Photo viewer</h2><ul class="pts"><li>Tap an album in Media &rsaquo; Photos to see its pictures full screen.</li><li><b>Previous</b> and <b>Next</b> move between pictures, the counter shows where you are, and <b>Close</b> takes you back.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/photo-viewer.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">26</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 5 of 8</div>
+ <h2>Sermons</h2><ul class="pts"><li><b>Sermons</b> sit below Media.</li><li>Search sermons, or tap a series name to narrow the list.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-sermons.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">27</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 6 of 8</div>
+ <h2>Sermon</h2><ul class="pts"><li>Open a sermon to see who preached, the date, Scripture, and series.</li><li>Watch it on Facebook and read the sermon's main points.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-sermon.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">28</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 7 of 8</div>
+ <h2>Add a photo</h2><ul class="pts"><li>The form for adding a photo to Media: title, date, category, and description.</li><li>Tap <b>Upload photo</b>. <b>Photos only</b>; there's no video option.</li><li>The photo then shows in Watch, under Media, then Photos. Only approved members, admins, and owners can use this form.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-add-photo.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">29</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">Watch <span>&rsaquo;</span> 8 of 8</div>
+ <h2>Saved event videos</h2><ul class="pts"><li>Saved event videos are listed in <b>Media &rsaquo; Videos</b>.</li><li>For example, the Vacation Bible School highlight reel, dated Sunday, June 14, 2026.</li><li>Tap a video to open it.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/watch-video.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">30</span></div></section><section class="slide intro"><div class="il">
+ <div class="tabno">Tab 5 of 5</div><h1>More</h1><p class="tag2">Directory, family, Bible, music, giving, contact, install, feedback, and leader tools.</p>
+ <div class="tabbar"><span class="">Home</span><span class="">Events</span><span class="">Prayer</span><span class="">Watch</span><span class="on">More</span></div></div>
+ <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist two"><li><span class="num">1</span>More</li><li><span class="num">2</span>Directory</li><li><span class="num">3</span>Directory member</li><li><span class="num">4</span>Family page</li><li><span class="num">5</span>Profile</li><li><span class="num">6</span>Profile: join a family</li><li><span class="num">7</span>Bible</li><li><span class="num">8</span>Music Ministry</li><li><span class="num">9</span>Request a song</li><li><span class="num">10</span>Give</li><li><span class="num">11</span>Contact</li><li><span class="num">12</span>Install the app</li><li><span class="num">13</span>Feedback</li><li><span class="num">14</span>Admin tools (admin)</li><li><span class="num">15</span>Owner tools: approvals</li><li><span class="num">16</span>Owner tools: pending events</li><li><span class="num">17</span>Owner tools: church settings</li><li><span class="num">18</span>Owner tools: service times</li><li><span class="num">19</span>Owner tools: members list</li><li><span class="num">20</span>Owner tools: display links</li></ol></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">31</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 1 of 20</div>
+ <h2>More</h2><ul class="pts"><li>Everything that isn't on the bottom bar.</li><li><b>Photo Drop</b> (add photos), Feedback, Directory, Daily prayer, Bible, music, giving, your profile, contact, and install help are all here.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">32</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 2 of 20</div>
+ <h2>Directory</h2><ul class="pts"><li>Church families and members.</li><li>Search by name. A phone number shows only when that member has shared it.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-directory.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">33</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 3 of 20</div>
+ <h2>Directory member</h2><ul class="pts"><li>Tap a name to see their card.</li><li><b>Call</b> or <b>Text</b> them, and see their email and birthday.</li><li>On your own card, tap <b>Edit your listing</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-directory-person.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">34</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 4 of 20</div>
+ <h2>Family page</h2><ul class="pts"><li>A family page shows the people in that household and how they're related.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-family.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">35</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 5 of 20</div>
+ <h2>Profile</h2><ul class="pts"><li>Your own profile. Tap <b>Change photo</b>, then update your name, phone, and email.</li><li>Check that your number is a mobile so it can get texts.</li><li>The <b>Show in directory</b> switch decides whether you're listed.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-profile.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">36</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 6 of 20</div>
+ <h2>Profile: join a family</h2><ul class="pts"><li>New members can ask to join a family.</li><li>Families are listed by name with their members' first names. Choose one, enter your relationship, and tap <b>Ask to join</b>.</li><li>The family gets a notice to approve.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-profile-family.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">37</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 7 of 20</div>
+ <h2>Bible</h2><ul class="pts"><li>Opens the New King James Version on Bible Gateway.</li><li>Type a verse, like John 3:16, and tap <b>Open</b>, or pick a book.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-bible.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">38</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 8 of 20</div>
+ <h2>Music Ministry</h2><ul class="pts"><li>Ask the music team for a song by title and artist.</li><li>If someone already asked for it, tap <b>+1</b> instead of adding it again.</li><li><b>Export CSV</b> saves the request list as a file.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-music.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">39</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 9 of 20</div>
+ <h2>Request a song</h2><ul class="pts"><li>Enter the song title and artist or band, plus an optional note or dedication.</li><li>Pick a preferred service, then tap <b>Add request</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-music-request.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">40</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 10 of 20</div>
+ <h2>Give</h2><ul class="pts"><li>Giving is still under construction.</li><li>Online giving (Venmo, Cash App, Apple Pay) is coming soon. Until then, you can give in the offering plate on Sunday.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-give.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">41</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 11 of 20</div>
+ <h2>Contact</h2><ul class="pts"><li>Call, Text, or Email the church.</li><li>You'll also find the address, our Facebook page, and service times.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-contact.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">42</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 12 of 20</div>
+ <h2>Install the app</h2><ul class="pts"><li>Step-by-step help for adding the app to your phone's home screen.</li><li>On Android: open the page in Chrome, tap <b>Install app</b> or <b>Add to Home screen</b>, then allow notifications.</li><li>A QR code is there to share the app with others.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-install.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">43</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 13 of 20</div>
+ <h2>Feedback</h2><ul class="pts"><li>Have a suggestion or improvement for the app?</li><li>Type it and tap <b>Submit</b>.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/more-feedback.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">44</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 14 of 20</div>
+ <h2>Admin tools (admin)</h2><ul class="pts"><li><span class='tag'>Admins</span> <b>Waiting for approval</b> is at the top of Admin tools, because approvals happen most often.</li><li>Tap <b>Approve</b> or <b>Decline</b> for each new member. Admins see only the name and photo, never private details, the members list, or families.</li><li>Below that, <b>Photo drops</b>: members upload photos, and after the drop closes they show in Watch &rsaquo; Media &rsaquo; Photos.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/admin-tools-admin.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">45</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 15 of 20</div>
+ <h2>Owner tools: approvals</h2><ul class="pts"><li><span class='tag'>Owners</span> Owners see <b>Waiting for approval</b> once, at the top, because approvals happen most often.</li><li>Each new member has <b>Approve</b> and <b>Decline</b>.</li><li>Photo drops come next.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/owner-1-approvals.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">46</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 16 of 20</div>
+ <h2>Owner tools: pending events</h2><ul class="pts"><li>Events that members suggest wait here.</li><li><b>Approve</b>, <b>Open</b>, <b>Edit</b>, or <b>Decline</b> with an optional note. You can check <b>Members can upload photos</b> before approving.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/owner-2-pending.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">47</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 17 of 20</div>
+ <h2>Owner tools: church settings</h2><ul class="pts"><li>Owners set up the home screen: pastor name, welcome message, denomination, and banner photo.</li><li>Also event reminders, the daily prayer check-in hour, and when prayers move to Past prayers.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/owner-3-settings.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">48</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 18 of 20</div>
+ <h2>Owner tools: service times</h2><ul class="pts"><li>Owners edit the service times shown on Home and Contact.</li><li>Each service has a time and an optional note. Tap <b>Add a service time</b> for another.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/owner-4-servicetimes.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">49</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 19 of 20</div>
+ <h2>Owner tools: members list</h2><ul class="pts"><li>The <b>Members</b> list shows approved people.</li><li>Use the <b>Family</b> list to put someone in a family, or pick <b>+ New family&hellip;</b> to start one.</li><li><b>Make admin</b> or <b>Make owner</b>. The app allows up to 2 owners.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="crops/owner-5-members.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">50</span></div></section><section class="slide sec"><div class="sl">
+ <div class="crumb">More <span>&rsaquo;</span> 20 of 20</div>
+ <h2>Owner tools: display links</h2><ul class="pts"><li><span class='tag'>Owners</span> <b>Display links</b> feed ProPresenter, which uses two web slides: the events screen (one full slide per event) and a separate prayer screen.</li><li>Tap <b>Preview events screen</b> or <b>Preview prayer screen</b> to check them.</li><li><b>Create a display link</b>, then <b>Copy</b> the Lobby screens addresses.</li></ul></div>
+ <div class="sr"><div class="phone"><img src="brief-screenshots/admin-tools-display.png"></div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">51</span></div></section><section class="slide chart"><div class="chl">
+ <div class="crumb">Leaders</div><h2>Who Can Do What</h2>
+ <p>Everything members can do, admins and owners can do too.</p>
+ <p><b>Admins</b> approve new members, but they see only a name and photo, never private details, the members list, or families.</p>
+ <p><b>Owners</b> (up to 2) can do everything.</p></div>
+ <div class="chr"><table><tr><th style="width:58%">Task</th><th>Members</th><th>Admins</th><th>Owners</th></tr><tr class="grp"><td colspan="4">Everyone signed in</td></tr><tr><td>Use Home, Events, Prayer, Watch, and More</td><td class="y">&#10003;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Suggest events and share prayer requests</td><td class="y">&#10003;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Add photos to events that allow uploads</td><td class="y">&#10003;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Ask to join a family</td><td class="y">&#10003;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Send app feedback (under More)</td><td class="y">&#10003;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr class="grp"><td colspan="4">Admins and owners</td></tr><tr><td>Approve or decline new members (name and photo only)</td><td class="n">&mdash;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Approve events</td><td class="n">&mdash;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Create photo drops and check &ldquo;Members can upload photos&rdquo; on events</td><td class="n">&mdash;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr><td>Help with prayer requests and feedback</td><td class="n">&mdash;</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr><tr class="grp"><td colspan="4">Owners only (up to 2)</td></tr><tr><td>The members list and families (including + New family&hellip;)</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr><tr><td>Make admin and Make owner</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr><tr><td>Announcements</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr><tr><td>Settings and service times</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr><tr><td>Display links</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr><tr><td>The end-of-event video montage</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="y">&#10003;</td></tr></table></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">52</span></div></section><section class="slide decide-s"><div class="decide">
+ <h2>For the church to decide</h2>
+ <div class="dcols">
+  <div class="qblock"><p class="q"><span>1</span>Who should be the app owners?</p>
+   <div class="rec"><div class="rk">Our recommendation</div><p>The app allows up to two owners. Two owners share full control (the members list and families, announcements, settings and admins), so the church is never locked out. Ronald Sellers is one owner, and the church chooses the second.</p></div>
+   <div class="writein"><div class="wl"><span>Owner 1</span><i class="pre">Ronald Sellers</i></div><div class="wl"><span>Owner 2</span><i class=""></i></div></div></div>
+  <div class="qblock"><p class="q"><span>2</span>Who should serve as app admins?</p>
+   <div class="rec"><div class="rk">Our recommendation</div><p>Four admins share the work of approving new members and events, setting up photo drops, and helping with prayer requests and app feedback.</p></div>
+   <div class="writein"><div class="wl"><span>Admin 1</span><i class=""></i></div><div class="wl"><span>Admin 2</span><i class=""></i></div><div class="wl"><span>Admin 3</span><i class=""></i></div><div class="wl"><span>Admin 4</span><i class=""></i></div></div></div>
+ </div></div><div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">53</span></div></section></body></html>

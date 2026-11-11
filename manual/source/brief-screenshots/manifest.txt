@@ -1,0 +1,39 @@
+file	tab	section	description
+home.png	Home	Home	Welcome, the sanctuary, Pastor Jody Mitchell, and the service times for a signed-in member.
+events-list.png	Events	Events list	Open photo-upload cards sit at the top when a drop is open, then announcements, then the upcoming event list.
+events-birthdays.png	Events	Birthdays & Anniversaries	November calendar of member birthdays and wedding anniversaries, with no years or ages.
+events-detail.png	Events	Event detail	Fellowship Supper. The photo card says pictures show in Watch > Media > Photos after uploads close, and it does not say they are private.
+events-new.png	Events	New event	The full new-event form, including the sign-up fields for a contact, a link, a deadline, and in-app sign-ups.
+events-announcement.png	Events	Announcement	A posted announcement that also appears on the events screen.
+events-upload-checkbox.png	Events	Members can upload photos	The owner’s event form, with Members can upload photos checked so a photo drop is created for that event.
+events-upload.png	Events	Photo upload	The member photo upload screen. After uploads close, the pictures are shown in Watch, under Media, then Photos.
+prayer-list.png	Prayer	Prayer list	Active prayer requests members can read and mark as praying.
+prayer-detail.png	Prayer	Prayer request	One request, Healing for my knee, opened from the list.
+prayer-new.png	Prayer	New prayer request	The form for submitting a prayer request.
+prayer-daily.png	Prayer	Daily prayer	Today’s church prayer and the list of earlier ones.
+prayer-daily-detail.png	Prayer	Daily prayer detail	One daily prayer, with room to say Amen.
+watch-live.png	Watch	Live	Sunday Morning Worship is live, signed in as a member. The owner live controls and the demo live buttons are not on this screen. Media dates read like Sunday, June 14, 2026.
+watch-media-videos.png	Watch	Media videos	Videos already saved from past events, dated like Sunday, June 14, 2026, plus any owner montage.
+watch-media-photos.png	Watch	Media photos	Photos already saved from past events, with a friendly date. Add a photo is on this Photos side only, and only an approved member, admin, or owner can see and use it. People waiting for approval, declined accounts, and signed-out visitors do not.
+photo-viewer.png	Watch	Photo viewer	Full-screen viewer for the Fellowship album (Fellowship supper tables), 1 of 1, with Close, Previous, and Next. Vacation Bible School photos stay out of Media while that drop is still open.
+watch-sermons.png	Watch	Sermons	Sermons sit under Media. Watch is the live service, then Media, then Sermons.
+watch-sermon.png	Watch	Sermon	The Lord Is My Shepherd, opened from the sermon list.
+watch-add-photo.png	Watch	Add a photo	The photos-only form opened from Media > Photos. Same people as the Add a photo link: an approved member, admin, or owner.
+watch-video.png	Watch	Saved event video	Vacation Bible School highlight reel in Media > Videos, dated Sunday, June 14, 2026. This screen does not show the preview-clip sentence.
+more.png	More	More	The More menu. Photo Drop says Add photos. Videos are not a member upload.
+more-directory.png	More	Directory	Church families and members, searched by name.
+more-directory-person.png	More	Directory member	Helen Brooks’s directory card.
+more-family.png	More	Family page	The Brooks family, with the people in that household.
+more-profile.png	More	Profile	A member’s own profile, starting with name, phone, and email.
+more-profile-family.png	More	Profile family	Mai asking to join a family, with each family labeled by name and its members’ first names.
+more-bible.png	More	Bible	The NKJV book list.
+more-music.png	More	Music Ministry	Song requests for the music team.
+more-music-request.png	More	Request a song	The form for asking the music team to sing a song.
+more-give.png	More	Give	The giving page, still marked as coming soon.
+more-contact.png	More	Contact	How to call, write, or message the church.
+more-install.png	More	Install the app	Instructions for adding Plainview to a phone’s home screen.
+more-feedback.png	More	Feedback	Where a member sends a suggestion for the app.
+admin-tools-admin.png	More	Admin tools (admin)	Waiting for approval is first, with Approve and Decline only. Photo drops says members’ photos show in Watch after the drop closes.
+admin-tools-owner.png	More	Admin tools (owner)	Waiting for approval appears once, at the top. Members lists approved people only, with the Family list open on + New family…, plus Make admin and Make owner.
+admin-tools-display.png	More	Admin tools (owner)	Display links for the owner: preview the events and prayer screens, create a link, and copy the Lobby screens addresses. Simulate Facebook live and End demo live are not on this screen. They show only for a church owner, and only in this preview build, under Connect Facebook Page. They are not on Watch. An admin who is not an owner, and ordinary members, do not see them. The production site is not preview mode, so those two buttons are not there.
+owner-montage.png	Events	Owner montage	Top: the owner’s past Vacation Bible School page, with the event video and the End-of-event video control. Bottom: Media > Videos lists that montage as Vacation Bible School, Sunday, June 14 at 10:00 AM.
