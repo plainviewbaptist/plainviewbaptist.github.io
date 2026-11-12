@@ -116,21 +116,26 @@ tabs=[
     "A QR code is there to share the app with others."]),
   (B+"more-feedback.png","Feedback",["Have a suggestion or improvement for the app?",
     "Type it and tap <b>Submit</b>."]),
-  (B+"admin-tools-admin.png","Admin tools (admin)",["<span class='tag'>Admins</span> <b>Waiting for approval</b> is at the top of Admin tools, because approvals happen most often.",
-    "Tap <b>Approve</b> or <b>Decline</b> for each new member. Admins see only the name and photo, never private details, the members list, or families.",
-    "Below that, <b>Photo drops</b>: members upload photos, and after the drop closes (3 days after the event ends) they show in Watch &rsaquo; Media &rsaquo; Photos."]),
-  (C+"owner-1-approvals.png","Owner tools: approvals",["<span class='tag'>Owners</span> Owners see <b>Waiting for approval</b> once, at the top, because approvals happen most often.",
+  (C+"v45-admin-approvals.png","Admin tools (admin)",["<span class='tag'>Admins</span> <b>Waiting for approval</b> is at the top of Admin tools, because approvals happen most often. Tap <b>Approve</b> or <b>Decline</b> for each new member.",
+    "Below that are <b>Photo drops</b> and <b>Pending events</b>. After a photo drop closes (3 days after the event ends), the photos show in Watch &rsaquo; Media &rsaquo; Photos.",
+    "Each section has a gold <b>Show</b>/<b>Hide</b> button. Approvals starts open when someone is waiting; the other sections start closed.",
+    "Admins see only a new member's name and photo, never private details, the Members section, or families."]),
+  (C+"v45-owner-overview.png","Owner tools: overview",["<span class='tag'>Owners</span> Every section in Admin tools has its own gold <b>Show</b>/<b>Hide</b> button. Most headers show a count, like <b>Members (11)</b>.",
+    "<b>Members</b> sits directly under <b>Waiting for approval</b>.",
+    "<b>Waiting for approval</b> starts open when someone is waiting. Every other section, including Members, starts closed until you tap <b>Show</b>."]),
+  (C+"v45-owner-approvals.png","Owner tools: approvals",["<span class='tag'>Owners</span> Owners see <b>Waiting for approval</b> once, at the top, because approvals happen most often.",
     "Each new member has <b>Approve</b> and <b>Decline</b>.",
-    "Photo drops come next."]),
+    "<b>Members</b> comes next."]),
+  (C+"v45-owner-members.png","Owner tools: members list",["<span class='tag'>Owners</span> Only owners see the <b>Members</b> section. It starts closed; tap <b>Show</b> to open it.",
+    "The <b>Members</b> list shows approved people.",
+    "Use the <b>Family</b> list to put someone in a family, or pick <b>+ New family&hellip;</b> to start one.",
+    "<b>Make admin</b> or <b>Make owner</b>. The app allows up to 2 owners."]),
   (C+"owner-2-pending.png","Owner tools: pending events",["Events that members suggest wait here.",
     "<b>Approve</b>, <b>Open</b>, <b>Edit</b>, or <b>Decline</b> with an optional note. You can check <b>Members can upload photos</b> before approving."]),
   (C+"owner-3-settings.png","Owner tools: church settings",["Owners set up the home screen: pastor name, welcome message, denomination, and banner photo.",
     "Also event reminders, the daily prayer check-in hour, and when prayers move to Past prayers."]),
   (C+"owner-4-servicetimes.png","Owner tools: service times",["Owners edit the service times shown on Home and Contact.",
     "Each service has a time and an optional note. Tap <b>Add a service time</b> for another."]),
-  (C+"owner-5-members.png","Owner tools: members list",["The <b>Members</b> list shows approved people.",
-    "Use the <b>Family</b> list to put someone in a family, or pick <b>+ New family&hellip;</b> to start one.",
-    "<b>Make admin</b> or <b>Make owner</b>. The app allows up to 2 owners."]),
   (B+"admin-tools-display.png","Owner tools: display links",["<span class='tag'>Owners</span> <b>Display links</b> feed ProPresenter, which uses two web slides: the events screen (one full slide per event) and a separate prayer screen.",
     "Tap <b>Preview events screen</b> or <b>Preview prayer screen</b> to check them.",
     "<b>Create a display link</b>, then <b>Copy</b> the Lobby screens addresses."]),
@@ -160,7 +165,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 44</div>
+  <div class="csub">A guide to every screen &middot; Version 45</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>

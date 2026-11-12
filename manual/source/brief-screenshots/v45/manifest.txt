@@ -1,0 +1,4 @@
+v45 Admin tools
+Owner collapsed: Waiting for approval, Members, Photo drops, Pending events, Admin, Service times, Display links, Messages.
+Owner expanded: approvals and Members open, with family dropdown and Make admin / Make owner.
+Admin role: Members section is not shown.

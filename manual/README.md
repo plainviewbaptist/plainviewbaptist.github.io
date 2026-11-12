@@ -1,1 +1,1 @@
-Plainview Baptist Church app manual, updated for app v44, 62 slides; Daily prayer no longer shows the writer's name; the 'Now vs. with the app' comparison slide was removed. The PDF is the current manual. source/ holds the HTML and screenshots used to build it (sample data only).
+Plainview Baptist Church app manual, updated for app v45, 63 slides; Admin tools puts Members below Approvals and uses collapsible sections. The PDF is the current manual (12,004,632 bytes). source/ holds the HTML and screenshots used to build it (sample data only).
