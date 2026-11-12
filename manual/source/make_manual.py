@@ -56,8 +56,10 @@ tabs=[
     "Check <b>Private</b> so only you and the admins see it.",
     "Or check <b>Hide my name</b>, and members see &ldquo;A church member.&rdquo;"]),
   (B+"prayer-daily.png","Daily prayer",["Today's prayer posted for the church, with earlier ones listed.",
+    "The prayer is shown without the name of the person who wrote it.",
     "Daily prayers stay off the prayer request list and the Sunday screen."]),
   (B+"prayer-daily-detail.png","Daily prayer detail",["Open a daily prayer to read it in full.",
+    "The prayer is shown without the name of the person who wrote it.",
     "Say <b>Amen</b> or tap a quick reaction."]),
  ]),
  ("Watch","The live service, then Media (photos and videos from past events), then Sermons.",[
@@ -158,7 +160,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 43</div>
+  <div class="csub">A guide to every screen &middot; Version 44</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -173,28 +175,6 @@ slides.append('''<section class="slide cover">
  </div>
 </section>''')
 n=2
-compare_rows=[
- ("Prayer requests","Texted to a group or said aloud at Bible study and service; no running list","Posted anytime; one list with Active and Past"),
- ("Prayer updates","Shared live in service, not written down","Each request has its own page; Praying and encouragement; answered ones move to Past"),
- ("Private requests","All or nothing in the text group","Private (admins only) or Hide my name"),
- ("Announcements","Spoken only, not posted","Posted on Events with notifications"),
- ("Events","Word of mouth, Facebook, texts","Calendar (list and month), flyers, sign-ups, reminders; guests can see it"),
- ("Event pictures","Texted around after events","Members upload to the event; saved in Watch &rsaquo; Media &rsaquo; Photos"),
- ("Event videos","Texted at the end of events","End-of-event video saved in Watch &rsaquo; Media &rsaquo; Videos"),
- ("Past videos and pictures","Facebook only","Saved in the app by event, newest first"),
- ("Live services","Facebook Live only","Still Facebook Live, linked from Watch, plus sermons"),
- ("Music requests","Written on a notepad","Music Ministry request form: song, artist, note, service"),
- ("Tithes and offerings","Cash or check in the plate","Give page ready; online giving coming soon (plate for now)"),
- ("Directory","None","Members-only directory with families"),
- ("Reaching visitors","Facebook only","Guests open the app from Facebook or the church website"),
-]
-trs=''.join(f'<tr><td>{a}</td><td>{now}</td><td>{app}</td></tr>' for a,now,app in compare_rows)
-slides.append(f'''<section class="slide compare">
- <div class="crumb">Why the app</div>
- <h2>Now vs. with the app</h2>
- <table><tr><th>Area</th><th>How we do it now</th><th>With the app</th></tr>{trs}</table>
- {foot(n)}</section>''')
-n+=1
 order=tabs[:4]+[guests]+tabs[4:]
 ti=-1
 for (tab,tag,secs) in order:
