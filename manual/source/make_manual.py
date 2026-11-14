@@ -61,6 +61,9 @@ tabs=[
   (B+"prayer-daily-detail.png","Daily prayer detail",["Open a daily prayer to read it in full.",
     "The prayer is shown without the name of the person who wrote it.",
     "Say <b>Amen</b> or tap a quick reaction."]),
+  ("brief-screenshots/v47/who-reacted-all.png","See who reacted",["On a daily prayer or a prayer request, tap the number on a reaction (when it's above 0), or press and hold the pill, to see who reacted.",
+    "A list slides up from the bottom. It has an <b>All</b> tab, plus a tab for each reaction with its count. Each row shows the member's photo or initials and name. The <b>All</b> tab also shows each person's reaction.",
+    "Tap the emoji or word itself to add or remove your own reaction. A count of 0 does nothing."]),
  ]),
  ("Watch","The live service, then Media (photos and videos from past events), then Sermons.",[
   (C+"watch-live-top.png","Live",["When a service is live, a red <b>Watching live now</b> banner runs across the top, and Watch shows <b>Live now</b> with the service name.",
@@ -179,7 +182,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 46</div>
+  <div class="csub">A guide to every screen &middot; Version 47</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>

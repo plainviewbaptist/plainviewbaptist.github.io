@@ -1,0 +1,5 @@
+v47 See who reacted
+who-reacted-all.png: The who-reacted sheet on a daily prayer, All tab, with each member's name, initials, and reaction.
+who-reacted-heart.png: The same sheet on the heart tab.
+daily-prayer-reactions.png: Today's daily prayer card with Amen, heart, thumbs-up, and praying reaction pills.
+prayer-list-reactions.png: Prayer request list with split Praying pills, including a count of 4 and a count of 0.
