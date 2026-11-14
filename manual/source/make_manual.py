@@ -157,6 +157,20 @@ guests=("Guests","No account yet, or still waiting for approval? You can look ar
   (None,"What guests can't do",[]),
 ])
 
+
+J='brief-screenshots/v46/'
+joining=("Joining","After you're approved, finish your profile and turn on notifications.",[
+  (J+"profile-setup.png","Profile setup",["Once you're approved, you get a notification: <b>You're approved &mdash; welcome to the Plainview family. Finish setting up your profile to be added to the church directory.</b>",
+    "Tap it to open this screen. The note at the top reminds you to finish setup and turn on notifications for prayer requests, event announcements, and updates.",
+    "A directory card is created only after you finish setup. Members who already finished setup get a different message: they can use prayer, the directory, and sign-ups."]),
+  (J+"notify-prompt.png","Turn on notifications",["If you haven't allowed notifications, this pop-up appears every 3 days until you turn them on.",
+    "Tap <b>Turn On</b> to let the app ask your phone for permission. You'll get prayer requests, event announcements, and updates. Or tap <b>Not now</b> to be asked again later.",
+    "On iPhone, add the app to your Home Screen first, or notifications won't work."]),
+  (J+"notify-blocked.png","Notifications blocked",["If you previously tapped <b>Don't Allow</b> when the phone asked, this pop-up appears instead.",
+    "It says notifications are blocked in <b>iPhone Settings &rsaquo; Notifications &rsaquo; Plainview</b>. The app can't turn them on for you, so only <b>Not now</b> is shown.",
+    "Open those Settings to allow notifications, then return to the app."]),
+])
+
 def foot(n): return f'<div class="sfoot"><span><b>plainviewbaptist.github.io</b></span><span>Plainview Baptist Church &middot; App Guide</span><span class="pn">{n}</span></div>'
 
 slides=[]
@@ -165,7 +179,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 45</div>
+  <div class="csub">A guide to every screen &middot; Version 46</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -180,16 +194,30 @@ slides.append('''<section class="slide cover">
  </div>
 </section>''')
 n=2
-order=tabs[:4]+[guests]+tabs[4:]
+order=tabs[:4]+[guests,joining]+tabs[4:]
 ti=-1
 for (tab,tag,secs) in order:
     isg = tab=="Guests"
-    if not isg: ti+=1
+    isj = tab=="Joining"
+    if not isg and not isj: ti+=1
     lis=''.join(f'<li><span class="num">{i+1}</span>{t}</li>' for i,(f,t,_) in enumerate(secs))
     cls='two' if len(secs)>8 else ''
+    if isg:
+        tabno="Guest access"
+        tabbar=''.join(f'<span class="on">{t}</span>' for t in ["Events","Watch","Contact"])
+        tabnote='<p class="tag2" style="font-size:12pt;margin-top:.12in">The three tabs guests see</p>'
+    elif isj:
+        tabno="After approval"
+        tabbar=""
+        tabnote='<p class="tag2" style="font-size:12pt;margin-top:.12in">This comes after an admin approves you</p>'
+    else:
+        tabno=f"Tab {ti+1} of 5"
+        tabbar=''.join(f'<span class="{"on" if t[0]==tab else ""}">{t[0]}</span>' for t in tabs)
+        tabnote=""
+    tabbar_html=f'<div class="tabbar">{tabbar}</div>' if tabbar else ""
     slides.append(f'''<section class="slide intro"><div class="il">
- <div class="tabno">{"Guest access" if isg else f"Tab {ti+1} of 5"}</div><h1>{tab}</h1><p class="tag2">{tag}</p>
- <div class="tabbar">{''.join(f'<span class="on">{t}</span>' for t in ["Events","Watch","Contact"]) if isg else ''.join(f'<span class="{"on" if t[0]==tab else ""}">{t[0]}</span>' for t in tabs)}</div>{'<p class="tag2" style="font-size:12pt;margin-top:.12in">The three tabs guests see</p>' if isg else ''}</div>
+ <div class="tabno">{tabno}</div><h1>{tab}</h1><p class="tag2">{tag}</p>
+ {tabbar_html}{tabnote}</div>
  <div class="ir"><div class="kicker" style="color:var(--gold2)">In this section</div><ol class="seclist {cls}">{lis}</ol></div>{foot(n)}</section>''')
     n+=1
     for i,(f,title,pts) in enumerate(secs):

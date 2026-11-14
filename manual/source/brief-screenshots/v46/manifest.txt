@@ -1,0 +1,4 @@
+v46 Joining and notifications
+profile-setup.png: After approval, the profile setup screen with the note to finish the profile and turn on notifications.
+notify-prompt.png: Turn on notifications pop-up (Turn On / Not now), shown every 3 days until allowed.
+notify-blocked.png: The same pop-up when notifications were previously blocked in iPhone Settings, with only Not now.

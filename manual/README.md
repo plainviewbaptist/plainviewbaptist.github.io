@@ -1,1 +1,1 @@
-Plainview Baptist Church app manual, updated for app v45, 63 slides; Admin tools puts Members below Approvals and uses collapsible sections. The PDF is the current manual (12,004,632 bytes). source/ holds the HTML and screenshots used to build it (sample data only).
+Plainview Baptist Church app manual, Version 46, 67 slides; adds a Joining section: profile setup after approval, turn on notifications pop-up every 3 days, notifications blocked. The PDF is the current manual (12,731,214 bytes). source/ holds the HTML and screenshots used to build it (sample data only).
