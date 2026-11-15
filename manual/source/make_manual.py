@@ -133,6 +133,9 @@ tabs=[
     "The <b>Members</b> list shows approved people.",
     "Use the <b>Family</b> list to put someone in a family, or pick <b>+ New family&hellip;</b> to start one.",
     "<b>Make admin</b> or <b>Make owner</b>. The app allows up to 2 owners."]),
+  (("brief-screenshots/v48/remove-member-button.png","brief-screenshots/v48/remove-member-confirm.png"),"Remove a member",["<span class='tag'>Owners</span> In Admin tools, then <b>Members</b>, a red <b>Remove member</b> button is on each person. It does not appear on your own row, or on the first owner's.",
+    "Tap it to confirm: <b>Remove [name]?</b> This deletes their account, their Directory card, and takes them out of their family. This can't be undone. Then tap red <b>Remove</b>, or <b>Cancel</b>.",
+    "Past prayers, reactions, and photos stay, and the name shows as <b>Member</b>. Unchecking or unapproving someone takes their Directory card down right away; re-approving restores it."]),
   (C+"owner-2-pending.png","Owner tools: pending events",["Events that members suggest wait here.",
     "<b>Approve</b>, <b>Open</b>, <b>Edit</b>, or <b>Decline</b> with an optional note. You can check <b>Members can upload photos</b> before approving."]),
   (C+"owner-3-settings.png","Owner tools: church settings",["Owners set up the home screen: pastor name, welcome message, denomination, and banner photo.",
@@ -182,7 +185,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 47</div>
+  <div class="csub">A guide to every screen &middot; Version 48</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -244,6 +247,13 @@ for (tab,tag,secs) in order:
  <div class="gcard"><h3>Guests can't</h3><ul><li>Add events</li><li>RSVP or sign up</li><li>Upload photos</li><li>Post anything</li></ul></div></div>{foot(n)}</section>''')
             n+=1; continue
         ps=''.join(f'<li>{p}</li>' for p in pts)
+        if isinstance(f, (list, tuple)):
+            phones=''.join(f'<div class="phone"><img src="{p}"></div>' for p in f)
+            slides.append(f'''<section class="slide sec two-phones"><div class="sl">
+ <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
+ <h2>{title}</h2><ul class="pts">{ps}</ul></div>
+ <div class="sr">{phones}</div>{foot(n)}</section>''')
+            n+=1; continue
         slides.append(f'''<section class="slide sec"><div class="sl">
  <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
  <h2>{title}</h2><ul class="pts">{ps}</ul></div>
@@ -267,6 +277,7 @@ rows=[("guest","Everyone, including guests",[
  ("owner","Owners only (up to 2)",[
  "The members list and families (including + New family&hellip;)",
  "Make admin and Make owner",
+ "Remove member",
  "Announcements",
  "Settings and service times",
  "Display links",

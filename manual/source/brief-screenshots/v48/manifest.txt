@@ -1,0 +1,4 @@
+v48 Remove a member
+remove-member-button.png: Owner Members row with the red Remove member button (2x from the 390-wide builder preview).
+remove-member-confirm.png: Confirm dialog, Remove Anna Blake, with red Remove and Cancel.
+members-after-removal.png: Members list after a removal (Members (10)), not used on the slide.

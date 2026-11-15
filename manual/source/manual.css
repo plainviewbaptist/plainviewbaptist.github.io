@@ -52,6 +52,12 @@ h1,h2,.q{font-family:"PF",serif;font-weight:500}
 .sec .sr{width:4.6in;display:flex;align-items:center;justify-content:center;padding-bottom:.4in;background:linear-gradient(180deg,rgba(201,154,60,.12),rgba(201,154,60,.22))}
 .phone{background:#1d1d1d;padding:.09in;border-radius:.36in;box-shadow:0 6px 18px rgba(40,25,10,.35)}
 .phone img{display:block;height:6.15in;width:auto;border-radius:.28in}
+.sec.two-phones .sl{padding:.55in .32in .55in .55in}
+.sec.two-phones h2{font-size:32pt}
+.sec.two-phones .pts li{font-size:14.5pt;margin-bottom:.12in}
+.sec.two-phones .sr{width:6.35in;gap:.12in;padding:.3in .18in .4in .08in}
+.sec.two-phones .phone{padding:.07in;border-radius:.3in}
+.sec.two-phones .phone img{height:5.9in;border-radius:.24in}
 /* chart */
 .chart .chl{width:4.3in;padding:.6in .3in .6in .7in;display:flex;flex-direction:column;justify-content:center}
 .chart h2{font-size:34pt;margin:.06in 0 .2in}
