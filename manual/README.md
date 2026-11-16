@@ -1,2 +1,2 @@
-Plainview Baptist Church app manual, Version 48, 69 slides. The PDF is the current manual (13,770,166 bytes). source/ holds the HTML and screenshots used to build it (sample data only).
-v48 adds 'Remove a member' (page 63) and a Remove member row in the owner/admin chart.
+Plainview Baptist Church app manual, Version 50, 72 slides. The PDF is the current manual (14,492,205 bytes). source/ holds the HTML and screenshots used to build it (sample data only).
+v49 'Today's prayer' renamed 'Today's Word/Prayer'; v50 Watch: Sermons then Media, collapsible Show/Hide on Go live, Sermons and Media; live card shows to members only when the video link plays in-app, otherwise only owners/admins see the Watch on Facebook box.

@@ -1,0 +1,6 @@
+v49 Today's Word/Prayer
+daily-prayer-detail.png: Detail heading Today's Word/Prayer when untitled.
+daily-prayer.png: Daily prayer section with today's post.
+home.png: Home (card is below the fold in this shot).
+more-daily-prayer.png: More line, Daily prayer subtitle Today's Word/Prayer and earlier ones.
+write-word-prayer.png: Write today's Word/Prayer screen.

@@ -1,0 +1,9 @@
+v50 Watch: Sermons then Media, live card rules, Go live
+live-in-app.png: Member in-app player when the live link plays (sample may show unavailable; do not caption that).
+member-no-live-card.png: Member Watch when the link can't play — no live card, Sermons first.
+live-unplayable-owner.png: Owner live card fallback, Watch on Facebook box, End live.
+go-live-closed.png: Owner Go live starts closed.
+go-live-open.png: Owner Go live open, paste URL and Go live and notify members.
+owner-end-live.png: Owner while live, End live on the live card.
+sermons-open-preview.png: Sermons open (preview/guest chrome).
+sections-closed.png: Sermons and Media both closed, Show buttons.

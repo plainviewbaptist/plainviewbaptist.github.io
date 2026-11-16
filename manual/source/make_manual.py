@@ -55,21 +55,34 @@ tabs=[
   (B+"prayer-new.png","New prayer request",["Give your request a title, details, and a date.",
     "Check <b>Private</b> so only you and the admins see it.",
     "Or check <b>Hide my name</b>, and members see &ldquo;A church member.&rdquo;"]),
-  (B+"prayer-daily.png","Daily prayer",["Today's prayer posted for the church, with earlier ones listed.",
-    "The prayer is shown without the name of the person who wrote it.",
+  ("brief-screenshots/v49/daily-prayer.png","Daily prayer",["The <b>Daily prayer</b> section shows today's Word/Prayer and earlier ones, without the name of the person who wrote it.",
+    "If a post has no title, the heading is <b>Today's Word/Prayer</b>. If it hasn't been posted yet, the app says <b>Today's Word/Prayer hasn't been posted yet.</b> The Home card uses the same heading.",
     "Daily prayers stay off the prayer request list and the Sunday screen."]),
-  (B+"prayer-daily-detail.png","Daily prayer detail",["Open a daily prayer to read it in full.",
-    "The prayer is shown without the name of the person who wrote it.",
+  ("brief-screenshots/v49/daily-prayer-detail.png","Daily prayer detail",["Open a daily prayer to read it in full.",
+    "When it has no title, the heading is <b>Today's Word/Prayer</b>.",
     "Say <b>Amen</b> or tap a quick reaction."]),
+  ("brief-screenshots/v49/write-word-prayer.png","Write today's Word/Prayer",["Tap <b>Write</b> on Daily prayer to open this screen, headed <b>Write today's Word/Prayer</b>.",
+    "You can add a title if you want one, or leave it blank.",
+    "When you post it, a notification goes out with the title <b>Today's Word/Prayer</b>."]),
   ("brief-screenshots/v47/who-reacted-all.png","See who reacted",["On a daily prayer or a prayer request, tap the number on a reaction (when it's above 0), or press and hold the pill, to see who reacted.",
     "A list slides up from the bottom. It has an <b>All</b> tab, plus a tab for each reaction with its count. Each row shows the member's photo or initials and name. The <b>All</b> tab also shows each person's reaction.",
     "Tap the emoji or word itself to add or remove your own reaction. A count of 0 does nothing."]),
  ]),
- ("Watch","The live service, then Media (photos and videos from past events), then Sermons.",[
-  (C+"watch-live-top.png","Live",["When a service is live, a red <b>Watching live now</b> banner runs across the top, and Watch shows <b>Live now</b> with the service name.",
-    "Services stream on Facebook Live. Tap <b>Open on Facebook</b> to watch there.",
-    "Right below is <b>Media</b>, with photos and videos from past events."]),
-  (B+"watch-media-videos.png","Media: Videos",["<b>Media</b> holds the photos and videos from past church events.",
+ ("Watch","The live service, then Sermons, then Media (photos and videos from past events).",[
+  ("brief-screenshots/v50/live-in-app.png","Live in the app",["When a service is live and the link can play in the app, everyone sees the in-app player and the red <b>Watching live now</b> banner.",
+    "The link must be a <b>facebook.com</b> address with <b>/videos/</b> and a number in it, and the video must be set to Public."]),
+  (("brief-screenshots/v50/member-no-live-card.png","brief-screenshots/v50/live-unplayable-owner.png"),"When the link can't play",["If the live link is blank, a Facebook Page link, or a <b>/share/</b> link, it can't play in the app. Members and guests then see no live card and no banner.",
+    "<span class='tag'>Leaders</span> Owners and admins still see the live card, with the dark <b>Watch on Facebook</b> box and a hint to paste the video's own link.",
+    "To get the right link, open the video in a web browser (the church videos page) and copy the address that has <b>/videos/</b> in it. The Share button's <b>/share/</b> link won't play."]),
+  (("brief-screenshots/v50/go-live-closed.png","brief-screenshots/v50/go-live-open.png"),"Go live",["<span class='tag'>Owners</span> <b>Go live</b> is on Watch for owners. It starts closed; tap <b>Show</b> to open it.",
+    "Paste the live video URL, then tap <b>Go live and notify members</b>. Facebook is the usual place; YouTube or Vimeo links work too.",
+    "While a service is live, <b>End live</b> stays on the live card."]),
+  ("brief-screenshots/v50/member-no-live-card.png","Sermons",["<b>Sermons</b> come first on Watch, above Media. Each section has a gold <b>Show</b>/<b>Hide</b> button, and both start open.",
+    "Search sermons, or tap a series name to narrow the list.",
+    "Each Sunday's Facebook Live is added to Sermons automatically after the service."]),
+  (B+"watch-sermon.png","Sermon",["Open a sermon to see who preached, the date, Scripture, and series.",
+    "Watch it on Facebook and read the sermon's main points."]),
+  (B+"watch-media-videos.png","Media: Videos",["<b>Media</b> sits below Sermons. It holds the photos and videos from past church events, and it has the same gold <b>Show</b>/<b>Hide</b> button, starting open.",
     "<b>Videos</b> is shown first, including the owner's end-of-event video montages.",
     "Newest first, with the date under each, like Sunday, June 14, 2026."]),
   (B+"watch-media-photos.png","Media: Photos",["Tap <b>Photos</b> to see pictures saved from past events, including members' uploads once a photo drop closes.",
@@ -77,10 +90,6 @@ tabs=[
     "<b>Add a photo</b> is for approved members, admins, and owners. People waiting for approval and visitors can't use it."]),
   (B+"photo-viewer.png","Photo viewer",["Tap an album in Media &rsaquo; Photos to see its pictures full screen.",
     "<b>Previous</b> and <b>Next</b> move between pictures, the counter shows where you are, and <b>Close</b> takes you back."]),
-  (B+"watch-sermons.png","Sermons",["<b>Sermons</b> sit below Media.",
-    "Search sermons, or tap a series name to narrow the list."]),
-  (B+"watch-sermon.png","Sermon",["Open a sermon to see who preached, the date, Scripture, and series.",
-    "Watch it on Facebook and read the sermon's main points."]),
   (B+"watch-add-photo.png","Add a photo",["The form for adding a photo to Media: title, date, category, and description.",
     "Tap <b>Upload photo</b>. <b>Photos only</b>; there's no video option.",
     "The photo then shows in Watch, under Media, then Photos. Only approved members, admins, and owners can use this form."]),
@@ -89,8 +98,8 @@ tabs=[
     "Tap a video to open it."]),
  ]),
  ("More","Directory, family, Bible, music, giving, contact, install, feedback, and leader tools.",[
-  (B+"more.png","More",["Everything that isn't on the bottom bar.",
-    "<b>Photo Drop</b> (add photos), Feedback, Directory, Daily prayer, Bible, music, giving, your profile, contact, and install help are all here."]),
+  ("brief-screenshots/v49/more-daily-prayer.png","More",["Everything that isn't on the bottom bar.",
+    "<b>Photo Drop</b> (add photos), Feedback, Directory, <b>Daily prayer</b> (Today's Word/Prayer and earlier ones), Bible, music, giving, your profile, contact, and install help are all here."]),
   (B+"more-directory.png","Directory",["Church families and members.",
     "Search by name. A phone number shows only when that member has shared it."]),
   (B+"more-directory-person.png","Directory member",["Tap a name to see their card.",
@@ -156,8 +165,9 @@ guests=("Guests","No account yet, or still waiting for approval? You can look ar
   (G+"guest-events.png","Guest: Events",["Guests get only three bottom tabs: <b>Events</b>, <b>Watch</b>, and <b>Contact</b>. A <b>Sign in / Join</b> button sits in the header.",
     "Events has <b>List</b> and <b>Month</b> views, event details, past events, and montage videos.",
     "Birthdays &amp; Anniversaries aren't shown to guests."]),
-  (G+"guest-watch.png","Guest: Watch",["Guests can watch the live stream and sermons.",
-    "They can also browse <b>Media</b>, with both <b>Videos</b> and <b>Photos</b>."]),
+  (G+"guest-watch.png","Guest: Watch",["Guests can watch the live service in the app when the video link plays, and they can watch sermons.",
+    "If the link can't play, guests see no live card and no banner.",
+    "They can also browse <b>Media</b>, with both <b>Videos</b> and <b>Photos</b>. On Watch, Sermons come first, then Media."]),
   (G+"guest-contact.png","Guest: Contact",["Guests can <b>Call</b>, <b>Text</b>, or <b>Email</b> the church, open our Facebook page, and see the service times.",
     "The message form is hidden for guests."]),
   (None,"What guests can't do",[]),
@@ -185,7 +195,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 48</div>
+  <div class="csub">A guide to every screen &middot; Version 50</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -273,7 +283,8 @@ rows=[("guest","Everyone, including guests",[
  "Approve or decline new members (name and photo only)",
  "Approve events",
  "Create photo drops and check &ldquo;Members can upload photos&rdquo; on events",
- "Help with prayer requests and feedback"]),
+ "Help with prayer requests and feedback",
+ "See the live card when the video link can't play in the app"]),
  ("owner","Owners only (up to 2)",[
  "The members list and families (including + New family&hellip;)",
  "Make admin and Make owner",
@@ -281,7 +292,8 @@ rows=[("guest","Everyone, including guests",[
  "Announcements",
  "Settings and service times",
  "Display links",
- "The end-of-event video montage"])]
+ "The end-of-event video montage",
+ "Go live"])]
 tr=''
 for k,g,items in rows:
     tr+=f'<tr class="grp"><td colspan="5">{g}</td></tr>'
@@ -293,7 +305,8 @@ slides.append(f'''<section class="slide chart"><div class="chl">
  <p>Everything members can do, admins and owners can do too.</p>
  <p><b>Admins</b> approve new members, but they see only a name and photo, never private details, the members list, or families.</p>
  <p><b>Owners</b> (up to 2) can do everything.</p>
- <p><b>Guests</b> (not signed in, or still waiting for approval) see only Events, Watch, and Contact.</p></div>
+ <p><b>Guests</b> (not signed in, or still waiting for approval) see only Events, Watch, and Contact.</p>
+ <p>When a live video link plays in the app, everyone sees the player and the <b>Watching live now</b> banner. When it can't play, only admins and owners see the live card.</p></div>
  <div class="chr"><table><tr><th style="width:52%">Task</th><th>Guests</th><th>Members</th><th>Admins</th><th>Owners</th></tr>{tr}</table></div>{foot(n)}</section>''')
 n+=1
 wl=lambda lab,pre='': f'<div class="wl"><span>{lab}</span><i class="{"pre" if pre else ""}">{pre}</i></div>'
