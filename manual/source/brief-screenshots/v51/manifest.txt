@@ -1,0 +1,28 @@
+v51 automatic event flyers — assets for the church app manual
+
+Sources (checked for beer, faces, and other problems before use):
+- potluck.jpg, bingo.jpg, communion.jpg  from /workspace/prod/v51-samples4/
+  Clean: no faces, no alcohol. Communion cups are communion, not beer.
+  Bingo is a church bingo card (activity matching), not casino playing cards.
+- vbs.jpg from /workspace/prod/v51-samples2/
+  Clean: lego background, no faces. Used in the event-detail / Your flyer screenshot
+  (different layout from the three samples on the Automatic flyers slide).
+- flyer-form-note.jpg from /workspace/prod/v51-samples2/
+  Tall full-page capture. Cropped to Location through Sign-up. The sticky tab bar
+  had covered the helper note, so the official in-app sentences were restored in
+  Atkinson Hyperlegible, same size and color as the app:
+    "Picture (JPG/PNG) shows on the Sunday screen. PDF shows as a link."
+    "If you don't upload a flyer, one will be made automatically from a matching photo."
+  Tab bar moved to the bottom of a phone frame. Notifications toast cropped out.
+- flyer-choice.jpg from /workspace/prod/v51-samples2/
+  Cropped to the Your flyer card. Sticky mid-page tab bar removed and placed at
+  the bottom. Keep and Make a new one were covered by that overlay in the original
+  capture and are not invented here; Replace with your own is visible. Notifications
+  toast cropped out.
+
+Phone screenshots: flyer-form-note.jpg and flyer-choice.jpg are quality-85 JPEGs at 700×1407.
+
+For the v51 manual rebuild, potluck, bingo, communion, vbs, and flyer-choice
+were converted from full-resolution PNGs to quality-85 JPEGs about 700 px wide
+(flyers 700×875, flyer-choice 700×1407) so the PDF and source zip stay small.
+flyer-form-note.jpg was resized the same way as flyer-choice so the source zip stays under 20 MB.

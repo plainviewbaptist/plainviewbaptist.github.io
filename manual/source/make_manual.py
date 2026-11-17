@@ -12,7 +12,7 @@ tabs=[
     "The bell shows your notifications. Your initials at the top open your profile."]),
   (C+"home-times.png","Service times",["Scroll down on Home to see the service times.",
     "Sunday School, Sunday Morning Worship, Sunday Evening Service, and Wednesday Evening Service are all listed."])]),
- ("Events","What's coming up, birthdays and anniversaries, and event photos.",[
+ ("Events","What's coming up, birthdays and anniversaries, event photos, and automatic flyers.",[
   (B+"events-list.png","Events list",["<b>Add</b> is the first button under the title. Tap it to suggest an event. The switch at the top opens <b>Birthdays &amp; Anniversaries</b>.",
     "Open photo-upload cards sit at the top, then announcements, then upcoming events.",
     "An event stays in the upcoming list until it ends."]),
@@ -32,6 +32,16 @@ tabs=[
   (B+"events-new.png","New event",["Members can suggest an event. <b>Date and time</b> is when it starts.",
     "<b>Ends</b> is optional, for an event that runs several days. Leave it blank for a single-date event.",
     "The event stays off the calendar and the Sunday screen until an admin approves it, and you'll get a notice when it's approved or turned down."]),
+  (("brief-screenshots/v51/potluck.jpg","brief-screenshots/v51/bingo.jpg","brief-screenshots/v51/communion.jpg"),"Automatic flyers",["If you save an event without uploading a flyer, the app makes a portrait flyer automatically.",
+    "It reads the title and the details. A specific activity such as bingo, flowers, potluck, or communion is used ahead of a general group such as women, men, or youth.",
+    "The date can hint at holidays like Thanksgiving, Christmas, or Easter.",
+    "One professional photo, never a collage, and no real people's faces. Small frosted text panels leave the photo in view. No two flyers are the same: a different photo and layout each time.",
+    "The church logo appears only when the location is the Sanctuary and/or Fellowship hall, Plainview Baptist Church, or left blank. Events elsewhere get no logo, but every flyer still has the Plainview Baptist Church name line.",
+    "Photos never include alcohol, casino or card imagery, or Halloween gore."]),
+  (("brief-screenshots/v51/flyer-form-note.jpg","brief-screenshots/v51/flyer-choice.jpg"),"Keep, make a new one, or use your own",["The new-event form says: if you don't upload a flyer, one will be made automatically from a matching photo.",
+    "On the event page you'll see <b>Your flyer</b>. Tap <b>Keep</b> to use it, or <b>Make a new one</b> for a fresh photo and layout.",
+    "Or tap <b>Replace with your own</b> to upload an image or a PDF. Uploaded flyers are never changed by the app.",
+    "If the title, date, time, place, or details change, the automatic flyer is remade to match."]),
   (B+"events-announcement.png","Announcement",["A posted announcement, like the Fellowship supper, also appears on the Events screen.",
     "Tap it to read the whole announcement. Tap <b>Back</b> to return."]),
   (B+"events-upload-checkbox.png","Members can upload photos",["<span class='tag'>Leaders</span> When setting up an event, check <b>Members can upload photos</b>.",
@@ -195,7 +205,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 50</div>
+  <div class="csub">A guide to every screen &middot; Version 51</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -258,6 +268,14 @@ for (tab,tag,secs) in order:
             n+=1; continue
         ps=''.join(f'<li>{p}</li>' for p in pts)
         if isinstance(f, (list, tuple)):
+            if len(f) >= 3:
+                imgs=''.join(f'<img src="{p}" alt="">' for p in f)
+                slides.append(f'''<section class="slide sec flyer-samples">
+ <div class="flyer-top"><div class="sl">
+ <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
+ <h2>{title}</h2><ul class="pts">{ps}</ul></div></div>
+ <div class="flyer-row">{imgs}</div>{foot(n)}</section>''')
+                n+=1; continue
             phones=''.join(f'<div class="phone"><img src="{p}"></div>' for p in f)
             slides.append(f'''<section class="slide sec two-phones"><div class="sl">
  <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
@@ -276,6 +294,7 @@ rows=[("guest","Everyone, including guests",[
  ("member","Signed-in members",[
  "Use Home, Prayer, More, and Birthdays &amp; Anniversaries",
  "Suggest events and share prayer requests",
+ "Get an automatic flyer when an event is saved without one",
  "Add photos to events that allow uploads",
  "Ask to join a family",
  "Send app feedback (under More)"]),
