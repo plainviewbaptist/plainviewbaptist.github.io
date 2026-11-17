@@ -1,0 +1,22 @@
+v52 / v52.2.1 events loop and prayer screen — assets for the church app manual
+
+From the v52.2.1 app screenshots, processed for the manual:
+
+- prayer-screen.jpg — Lobby/TV prayer screen (1920×1080, quality-85 JPEG).
+  Sanctuary photo (center aisle, knotty pine, pews) on the left; wood-toned
+  prayer cards on the right; church logo and name at the top; no time or date.
+
+- prayer-screen-preview.jpg — Member/admin in-app preview of that screen,
+  with Previous/Next, page count, and Close (780×1688, quality-85 JPEG).
+
+- prayer-tab-member.png — Prayer tab as a member, showing the new
+  View prayer screen button. The "Notifications turned off" toast in the
+  original capture was removed by compositing the matching clean header
+  from prayer-list.png (same 780×1688 layout). Kept as PNG like the other
+  phone screenshots.
+
+Loop timing (no new screenshot): documented on Owner tools: display links.
+Each events-screen slide shows for 8 seconds; the app QR code slide appears
+after every 5 slides (4 or fewer slides: one QR at the end). The per-flyer
+"seconds on screen" setting no longer changes the loop, and ?rotate= in the
+display link is ignored.

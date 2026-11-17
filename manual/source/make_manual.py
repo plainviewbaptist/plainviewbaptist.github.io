@@ -57,9 +57,17 @@ tabs=[
     "Montages and saved videos use the same full date, with the year, like <b>Sunday, June 14, 2026</b>. Here it's Vacation Bible School night."]),
  ]),
  ("Prayer","Share requests and pray for one another.",[
-  (B+"prayer-list.png","Prayer list",["Active prayer requests that members can read.",
+  ("brief-screenshots/v52/prayer-tab-member.png","Prayer list",["Active prayer requests that members can read.",
     "Tap <b>Praying</b> to show you're praying. The number shows how many are praying.",
-    "Switch between <b>Active</b> and <b>Past prayers</b>, open <b>Daily prayer</b>, or tap <b>New request</b>."]),
+    "Switch between <b>Active</b> and <b>Past prayers</b>, open <b>Daily prayer</b>, or tap <b>New request</b>.",
+    "Tap <b>View prayer screen</b> to see the lobby prayer screen. Everyone who can open the Prayer tab can use it: members, admins, and owners. Signed-out guests don't have this tab."]),
+  ("brief-screenshots/v52/prayer-screen-preview.jpg","View prayer screen",["The preview has <b>Previous</b> and <b>Next</b> buttons, a page count, and <b>Close</b>. You can also use the arrows or swipe to move between pages.",
+    "This is a preview of the prayer screen used on the lobby TV or projector.",
+    "The admin preview page and display-link controls remain admin-only."]),
+  ("brief-screenshots/v52/prayer-screen.jpg","Prayer screen",["The redesigned prayer screen puts Ronald's sanctuary photo &mdash; the center aisle, knotty pine walls, and pews &mdash; sharp on the left.",
+    "A warm wood column of prayer cards sits on the right, with the church logo and name at the top. There is no time or date on the screen.",
+    "Only public requests are shown. Private, anonymous, answered, and archived requests are left off. Six requests appear on each page.",
+    "On the TV or projector, pages change by keyboard, not by themselves."]),
   (B+"prayer-detail.png","Prayer request",["Open a request from the list to read all of it.",
     "Tap <b>Praying</b>, or write a note and tap <b>Send encouragement</b>."]),
   (B+"prayer-new.png","New prayer request",["Give your request a title, details, and a date.",
@@ -162,6 +170,8 @@ tabs=[
   (C+"owner-4-servicetimes.png","Owner tools: service times",["Owners edit the service times shown on Home and Contact.",
     "Each service has a time and an optional note. Tap <b>Add a service time</b> for another."]),
   (B+"admin-tools-display.png","Owner tools: display links",["<span class='tag'>Owners</span> <b>Display links</b> feed ProPresenter, which uses two web slides: the events screen (one full slide per event) and a separate prayer screen.",
+    "On the events screen, each slide shows for 8 seconds. The app QR code slide appears after every 5 slides. If there are 4 or fewer slides, one QR slide shows at the end.",
+    "The per-flyer <b>seconds on screen</b> setting no longer changes the loop timing, and <b>?rotate=</b> in the display link is ignored.",
     "Tap <b>Preview events screen</b> or <b>Preview prayer screen</b> to check them.",
     "<b>Create a display link</b>, then <b>Copy</b> the Lobby screens addresses."]),
  ]),
@@ -205,7 +215,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 51.1</div>
+  <div class="csub">A guide to every screen &middot; Version 52</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -267,6 +277,12 @@ for (tab,tag,secs) in order:
  <div class="gcard"><h3>Guests can't</h3><ul><li>Add events</li><li>RSVP or sign up</li><li>Upload photos</li><li>Post anything</li></ul></div></div>{foot(n)}</section>''')
             n+=1; continue
         ps=''.join(f'<li>{p}</li>' for p in pts)
+        if isinstance(f, str) and "/v52/prayer-screen." in f:
+            slides.append(f'''<section class="slide sec wide-screen"><div class="sl">
+ <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
+ <h2>{title}</h2><ul class="pts">{ps}</ul></div>
+ <div class="sr"><div class="screen"><img src="{f}" alt=""></div></div>{foot(n)}</section>''')
+            n+=1; continue
         if isinstance(f, (list, tuple)):
             if len(f) >= 3 or all("/v51/live-" in p for p in f):
                 imgs=''.join(f'<img src="{p}" alt="">' for p in f)
@@ -295,6 +311,7 @@ rows=[("guest","Everyone, including guests",[
  "Use Home, Prayer, More, and Birthdays &amp; Anniversaries",
  "Suggest events and share prayer requests",
  "Get an automatic flyer when an event is saved without one",
+ "View the prayer screen from the Prayer tab",
  "Add photos to events that allow uploads",
  "Ask to join a family",
  "Send app feedback (under More)"]),

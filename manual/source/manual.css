@@ -67,17 +67,23 @@ h1,h2,.q{font-family:"PF",serif;font-weight:500}
 .sec.flyer-samples .pts li{font-size:12.75pt;line-height:1.28;margin-bottom:.07in;width:calc(50% - .22in)}
 .sec.flyer-samples .flyer-row{flex:none;display:flex;justify-content:center;align-items:flex-end;gap:.2in;padding:.12in .5in .48in;background:linear-gradient(180deg,rgba(201,154,60,.10),rgba(201,154,60,.22))}
 .sec.flyer-samples .flyer-row img{height:2.85in;width:auto;border-radius:.08in;box-shadow:0 .07in .18in rgba(40,24,8,.28);border:1px solid rgba(80,50,10,.12);background:#fff}
+/* lobby / TV 16:9 screens */
+.sec.wide-screen .sl{flex:none;width:4.3in;padding:.5in .32in .55in .55in}
+.sec.wide-screen h2{font-size:30pt}
+.sec.wide-screen .pts li{font-size:14pt;line-height:1.32;margin-bottom:.11in}
+.sec.wide-screen .sr{flex:1;width:auto;padding:.35in .4in .5in .2in}
+.sec.wide-screen .screen img{display:block;width:8.3in;height:auto;border-radius:.1in;box-shadow:0 .08in .2in rgba(40,24,8,.32);border:1px solid rgba(80,50,10,.14);background:#111}
 /* chart */
 .chart .chl{width:4.3in;padding:.4in .28in .5in .55in;display:flex;flex-direction:column;justify-content:center}
 .chart h2{font-size:30pt;margin:.04in 0 .12in}
 .chart .chl p{font-size:12.5pt;line-height:1.35;margin-bottom:.08in}
-.chart .chr{flex:1;padding:.22in .45in .48in .15in;display:flex;align-items:center}
-table{width:100%;border-collapse:collapse;font-size:10.5pt}
-th{background:var(--dark);color:var(--gold2);font-weight:800;padding:.05in .08in;text-align:center}
+.chart .chr{flex:1;padding:.14in .45in .38in .15in;display:flex;align-items:center}
+table{width:100%;border-collapse:collapse;font-size:10pt}
+th{background:var(--dark);color:var(--gold2);font-weight:800;padding:.04in .08in;text-align:center}
 th:first-child{text-align:left}
-td{padding:.022in .08in;border-bottom:1px solid #e3cf9f;text-align:center;background:#fffaf0}
+td{padding:.012in .08in;border-bottom:1px solid #e3cf9f;text-align:center;background:#fffaf0}
 td:first-child{text-align:left}
-.y{color:#2e6b2e;font-weight:900;font-size:13pt}.n{color:#b8a888}
+.y{color:#2e6b2e;font-weight:900;font-size:12pt}.n{color:#b8a888}
 tr.grp td{background:var(--brown2);color:var(--gold2);font-weight:800;font-size:10pt;letter-spacing:.05em;text-transform:uppercase;text-align:left}
 /* decide */
 .decide-s{padding:.35in .6in .65in}
