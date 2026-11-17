@@ -32,16 +32,16 @@ tabs=[
   (B+"events-new.png","New event",["Members can suggest an event. <b>Date and time</b> is when it starts.",
     "<b>Ends</b> is optional, for an event that runs several days. Leave it blank for a single-date event.",
     "The event stays off the calendar and the Sunday screen until an admin approves it, and you'll get a notice when it's approved or turned down."]),
-  (("brief-screenshots/v51/potluck.jpg","brief-screenshots/v51/bingo.jpg","brief-screenshots/v51/communion.jpg"),"Automatic flyers",["If you save an event without uploading a flyer, the app makes a portrait flyer automatically.",
+  (("brief-screenshots/v51/live-greens.jpg","brief-screenshots/v51/live-ladies-christmas.jpg"),"Automatic flyers",["If you save an event without uploading a flyer, the app makes a landscape 16:9 flyer automatically.",
     "It reads the title and the details. A specific activity such as bingo, flowers, potluck, or communion is used ahead of a general group such as women, men, or youth.",
-    "The date can hint at holidays like Thanksgiving, Christmas, or Easter.",
-    "One professional photo, never a collage, and no real people's faces. Small frosted text panels leave the photo in view. No two flyers are the same: a different photo and layout each time.",
+    "The date can hint at holidays like Thanksgiving, Christmas, or Easter. Hanging of the Greens flyers get an evergreen garland frame with a small Christmas card.",
+    "The photo fills the flyer edge to edge. Text sits in a small panel along a side, the top, the bottom, or a corner, never in the middle. One professional photo, never a collage, and no real people's faces. No two flyers are the same: a different photo and layout each time.",
     "The church logo appears only when the location is the Sanctuary and/or Fellowship hall, Plainview Baptist Church, or left blank. Events elsewhere get no logo, but every flyer still has the Plainview Baptist Church name line.",
     "Photos never include alcohol, casino or card imagery, or Halloween gore."]),
-  (("brief-screenshots/v51/flyer-form-note.jpg","brief-screenshots/v51/flyer-choice.jpg"),"Keep, make a new one, or use your own",["The new-event form says: if you don't upload a flyer, one will be made automatically from a matching photo.",
-    "On the event page you'll see <b>Your flyer</b>. Tap <b>Keep</b> to use it, or <b>Make a new one</b> for a fresh photo and layout.",
-    "Or tap <b>Replace with your own</b> to upload an image or a PDF. Uploaded flyers are never changed by the app.",
-    "If the title, date, time, place, or details change, the automatic flyer is remade to match."]),
+  ("brief-screenshots/v51/flyer-form-note.jpg","Keep, make a new one, or use your own",["The new-event form says: if you don't upload a flyer, one will be made automatically from a matching photo.",
+    "On the event page you'll see <b>Your flyer</b>. Tap <b>Keep</b> to use it, or <b>Make a new one</b> for a fresh photo and layout. Or tap <b>Replace with your own</b> to upload an image or a PDF. Uploaded flyers are never changed by the app.",
+    "If the title, date, time, place, or details change, the automatic flyer is remade to match.",
+    "Event cards, the event detail picture, the <b>Your flyer</b> preview, and approval thumbnails all show flyers in a 16:9 frame. The fullscreen viewer fills the screen."]),
   (B+"events-announcement.png","Announcement",["A posted announcement, like the Fellowship supper, also appears on the Events screen.",
     "Tap it to read the whole announcement. Tap <b>Back</b> to return."]),
   (B+"events-upload-checkbox.png","Members can upload photos",["<span class='tag'>Leaders</span> When setting up an event, check <b>Members can upload photos</b>.",
@@ -205,7 +205,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 51</div>
+  <div class="csub">A guide to every screen &middot; Version 51.1</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -268,7 +268,7 @@ for (tab,tag,secs) in order:
             n+=1; continue
         ps=''.join(f'<li>{p}</li>' for p in pts)
         if isinstance(f, (list, tuple)):
-            if len(f) >= 3:
+            if len(f) >= 3 or all("/v51/live-" in p for p in f):
                 imgs=''.join(f'<img src="{p}" alt="">' for p in f)
                 slides.append(f'''<section class="slide sec flyer-samples">
  <div class="flyer-top"><div class="sl">
