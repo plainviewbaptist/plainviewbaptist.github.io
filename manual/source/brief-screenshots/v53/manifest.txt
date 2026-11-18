@@ -1,0 +1,15 @@
+v53.0.0 Action needed pop-up — assets for the church app manual
+
+From the v53.0.0 app screenshots, processed for the manual (all 780×1688 PNG):
+
+- action-needed-owner.png — Owner view of the Action needed pop-up, with
+  new member requests, an event needing approval, and music requests received.
+
+- action-needed-music.png — Music team (member) view, showing only
+  music requests received.
+
+- action-needed-open-event.png — After tapping Open on the events line
+  when only one event is waiting: the app goes straight to that event
+  (Youth game night, waiting for approval). The "Notifications turned off"
+  toast in the original capture was removed by compositing the matching
+  clean header from admin-tools-display.png (same owner session layout).

@@ -58,6 +58,11 @@ h1,h2,.q{font-family:"PF",serif;font-weight:500}
 .sec.two-phones .sr{width:6.35in;gap:.12in;padding:.3in .18in .4in .08in}
 .sec.two-phones .phone{padding:.07in;border-radius:.3in}
 .sec.two-phones .phone img{height:5.9in;border-radius:.24in}
+.sec.two-phones.captioned h2{font-size:30pt}
+.sec.two-phones.captioned .pts li{font-size:13.5pt;margin-bottom:.10in}
+.sec.two-phones.captioned .phone-fig{margin:0;display:flex;flex-direction:column;align-items:center}
+.sec.two-phones.captioned .phone img{height:5.45in}
+.sec.two-phones.captioned figcaption{font-size:10pt;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--brown);margin-top:.06in;text-align:center}
 /* automatic flyer samples */
 .sec.flyer-samples{flex-direction:column;align-items:stretch}
 .sec.flyer-samples .flyer-top{flex:1;display:flex;min-height:0}
@@ -67,6 +72,18 @@ h1,h2,.q{font-family:"PF",serif;font-weight:500}
 .sec.flyer-samples .pts li{font-size:12.75pt;line-height:1.28;margin-bottom:.07in;width:calc(50% - .22in)}
 .sec.flyer-samples .flyer-row{flex:none;display:flex;justify-content:center;align-items:flex-end;gap:.2in;padding:.12in .5in .48in;background:linear-gradient(180deg,rgba(201,154,60,.10),rgba(201,154,60,.22))}
 .sec.flyer-samples .flyer-row img{height:2.85in;width:auto;border-radius:.08in;box-shadow:0 .07in .18in rgba(40,24,8,.28);border:1px solid rgba(80,50,10,.12);background:#fff}
+/* three captioned phones (Action needed) */
+.sec.three-phones{flex-direction:column;align-items:stretch}
+.sec.three-phones .tp-top{flex:1;display:flex;min-height:0}
+.sec.three-phones .sl{flex:1;padding:.22in .6in .02in .7in;justify-content:flex-start}
+.sec.three-phones h2{font-size:28pt;margin:.02in 0 .08in;padding-bottom:.06in}
+.sec.three-phones .pts{display:flex;flex-wrap:wrap;gap:0 .4in}
+.sec.three-phones .pts li{font-size:12.5pt;line-height:1.28;margin-bottom:.055in;width:calc(50% - .22in)}
+.sec.three-phones .phone-row{flex:none;display:flex;justify-content:center;align-items:flex-end;gap:.22in;padding:.08in .45in .40in;background:linear-gradient(180deg,rgba(201,154,60,.10),rgba(201,154,60,.22))}
+.sec.three-phones .phone-fig{margin:0;display:flex;flex-direction:column;align-items:center}
+.sec.three-phones .phone{padding:.07in;border-radius:.3in}
+.sec.three-phones .phone img{height:4.15in;border-radius:.24in}
+.sec.three-phones figcaption{font-size:10pt;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--brown);margin-top:.06in;text-align:center}
 /* lobby / TV 16:9 screens */
 .sec.wide-screen .sl{flex:none;width:4.3in;padding:.5in .32in .55in .55in}
 .sec.wide-screen h2{font-size:30pt}

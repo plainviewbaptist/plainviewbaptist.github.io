@@ -146,6 +146,16 @@ tabs=[
     "A QR code is there to share the app with others."]),
   (B+"more-feedback.png","Feedback",["Have a suggestion or improvement for the app?",
     "Type it and tap <b>Submit</b>."]),
+  ((("brief-screenshots/v53/action-needed-owner.png","Owner"),
+    ("brief-screenshots/v53/action-needed-music.png","Music team")),
+   "Action needed",["This pop-up appears right after the app opens or someone signs in, when anything is waiting on them.",
+    "Each line is one list, with a count and an <b>Open</b> button. Lines with a count of zero are hidden, and there's no pop-up if every list is at zero.",
+    "<b>New member requests</b> and <b>events that need approval</b> go to admins and owners. Flyers are reviewed with their event, so they count on the events line.",
+    "<b>Music requests received</b> (songs still in Requested status) go to the music team and owners.",
+    "<b>Family join requests</b> and <b>family link requests</b> go to members of that family.",
+    "<b>Go to app</b> closes the pop-up for this visit. It comes back on the next sign-in, or the next time the app is fully closed and reopened (just switching away on a phone and coming back doesn't count), until everything is handled."]),
+  ("brief-screenshots/v53/action-needed-open-event.png","Open a waiting item",["Tap <b>Open</b> on a line to go to that list, or straight to the item if only one is waiting.",
+    "Here one event needed approval, so <b>Open</b> went straight to Youth game night, which is waiting for approval."]),
   (C+"v45-admin-approvals.png","Admin tools (admin)",["<span class='tag'>Admins</span> <b>Waiting for approval</b> is at the top of Admin tools, because approvals happen most often. Tap <b>Approve</b> or <b>Decline</b> for each new member.",
     "Below that are <b>Photo drops</b> and <b>Pending events</b>. After a photo drop closes (3 days after the event ends), the photos show in Watch &rsaquo; Media &rsaquo; Photos.",
     "Each section has a gold <b>Show</b>/<b>Hide</b> button. Approvals starts open when someone is waiting; the other sections start closed.",
@@ -215,7 +225,7 @@ slides.append('''<section class="slide cover">
   <img class="clogo" src="../pbc-logo-cutout.png">
   <div class="kicker">Plainview Baptist Church &middot; Hornbeck, Louisiana</div>
   <h1>Our Church App</h1>
-  <div class="csub">A guide to every screen &middot; Version 52</div>
+  <div class="csub">A guide to every screen &middot; Version 53</div>
   <div class="inst">
    <div class="os">Same app on iPhone and Android</div>
    <p><b>iPhone:</b> Open the link in Safari, tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
@@ -283,6 +293,22 @@ for (tab,tag,secs) in order:
  <h2>{title}</h2><ul class="pts">{ps}</ul></div>
  <div class="sr"><div class="screen"><img src="{f}" alt=""></div></div>{foot(n)}</section>''')
             n+=1; continue
+        if isinstance(f, (list, tuple)) and f and isinstance(f[0], (list, tuple)):
+            phones=''.join(
+                f'<figure class="phone-fig"><div class="phone"><img src="{path}" alt=""></div><figcaption>{cap}</figcaption></figure>'
+                for path, cap in f)
+            if len(f) >= 3:
+                slides.append(f'''<section class="slide sec three-phones">
+ <div class="tp-top"><div class="sl">
+ <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
+ <h2>{title}</h2><ul class="pts">{ps}</ul></div></div>
+ <div class="phone-row">{phones}</div>{foot(n)}</section>''')
+            else:
+                slides.append(f'''<section class="slide sec two-phones captioned"><div class="sl">
+ <div class="crumb">{tab} <span>&rsaquo;</span> {i+1} of {len(secs)}</div>
+ <h2>{title}</h2><ul class="pts">{ps}</ul></div>
+ <div class="sr">{phones}</div>{foot(n)}</section>''')
+            n+=1; continue
         if isinstance(f, (list, tuple)):
             if len(f) >= 3 or all("/v51/live-" in p for p in f):
                 imgs=''.join(f'<img src="{p}" alt="">' for p in f)
@@ -314,7 +340,8 @@ rows=[("guest","Everyone, including guests",[
  "View the prayer screen from the Prayer tab",
  "Add photos to events that allow uploads",
  "Ask to join a family",
- "Send app feedback (under More)"]),
+ "Send app feedback (under More)",
+ "See the Action needed pop-up when something is waiting on you"]),
  ("admin","Admins and owners",[
  "Approve or decline new members (name and photo only)",
  "Approve events",
